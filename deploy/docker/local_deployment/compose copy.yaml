@@ -17,7 +17,7 @@
 
 services:
   via-server:
-    image: ${VIA_IMAGE:-nvcr.io/nvidia/blueprint/vss-engine:2.4.0${IS_SBSA:+-sbsa}}
+    image: ${VIA_IMAGE:-nvcr.io/nvidia/blueprint/vss-engine:2.4.0}
     shm_size: '16gb'
     runtime: nvidia
     ports:
@@ -130,36 +130,15 @@ services:
       ES_PORT: "${ES_PORT:-9200}"
       ES_TRANSPORT_PORT: "${ES_TRANSPORT_PORT:-9300}"
       ES_HOST: "${ES_HOST:-elasticsearch}"
-      # vLLM/Triton optimizations
-  
-      VLLM_ATTENTION_BACKEND: "triton" # 필요함
-      VIA_ENABLE_SUMMARIZATION: "0"
-
-      # TRITON_AUTOTUNE_POINTWISE: "0"
-      # TRITON_AUTOTUNE_CONV: "0"
-      # TRITON_MAX_CL_SIZE: "64"
-      # TRITON_MAX_CL_NUM_WARPS: "4"
-
-      # VLLM_USE_TRITON_FLASH_ATTENTION: "1"
-      # VLLM_DISABLE_COMPILE_CACHE: "1"
-      # TORCHINDUCTOR_DISABLE_AUTOTUNE: "1"
-      # VLLM_GPU_MEMORY_UTILIZATION: "0.6"      
-      # CUDA_LAUNCH_BLOCKING: "1"
-      # VLLM_DISABLE_TORCH_COMPILE: "1"
-      # TORCH_COMPILE_DISABLE: "1"
-      # TORCHINDUCTOR_DISABLE: "1"
-      # VLLM_COMPILATION_LEVEL: "0"
-      # VLLM_USE_FLASHINFER: "0"
-      # VLLM_SAMPLING_USE_FLASHINFER: "0"
-    # depends_on:
-    #   milvus-standalone:
-    #     condition: service_healthy
-    #   graph-db:
-    #     condition: service_started
-    #   arango-db:
-    #     condition: service_started
-    #   minio:
-    #     condition: service_started
+    depends_on:
+      milvus-standalone:
+        condition: service_healthy
+      graph-db:
+        condition: service_started
+      arango-db:
+        condition: service_started
+      minio:
+        condition: service_started
     ulimits:
       memlock:
         soft: -1
@@ -305,3 +284,9 @@ volumes:
   via-ngc-model-cache:
   minio-data:
   prometheus-data:
+
+
+networks:
+  default:
+    name: via-engine-${USER}
+    external: true

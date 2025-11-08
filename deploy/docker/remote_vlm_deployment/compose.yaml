@@ -130,15 +130,15 @@ services:
       ES_PORT: "${ES_PORT:-9200}"
       ES_TRANSPORT_PORT: "${ES_TRANSPORT_PORT:-9300}"
       ES_HOST: "${ES_HOST:-elasticsearch}"
-    depends_on:
-      milvus-standalone:
-        condition: service_healthy
-      graph-db:
-        condition: service_started
-      arango-db:
-        condition: service_started
-      minio:
-        condition: service_started
+    # depends_on:
+      # milvus-standalone:
+      #   condition: service_healthy
+      # graph-db:
+      #   condition: service_started
+      # arango-db:
+      #   condition: service_started
+      # minio:
+      #   condition: service_started
     ulimits:
       memlock:
         soft: -1

@@ -1326,11 +1326,31 @@ class VideoFileFrameGetter:
 
         def buffer_probe(pad, info, data):
             # Probe callback function to pass chosen frames and drop other frames
+            # DEBUG: Count probe calls
+            if not hasattr(self, '_debug_frame_probe_count'):
+                self._debug_frame_probe_count = 0
+            self._debug_frame_probe_count += 1
+            
             buffer = info.get_buffer()
             if buffer.pts == Gst.CLOCK_TIME_NONE:
+                logger.info(
+                    "DEBUG [Chunk %d]: buffer_probe #%d - DROPPED (pts=NONE)",
+                    self._chunkIdx,
+                    self._debug_frame_probe_count,
+                )
                 return Gst.PadProbeReturn.DROP
 
             self._last_frame_pts = buffer.pts
+            
+            # DEBUG: Log every buffer probe call
+            logger.info(
+                "DEBUG [Chunk %d]: buffer_probe #%d - pts=%d (%.2fs), is_live=%s",
+                self._chunkIdx,
+                self._debug_frame_probe_count,
+                buffer.pts,
+                buffer.pts / 1e9,
+                self._is_live,
+            )
 
             if self._is_live:
                 buffer_address = hash(buffer)
@@ -1409,25 +1429,59 @@ class VideoFileFrameGetter:
                     return Gst.PadProbeReturn.OK
 
             else:
-                if self._frame_selector.choose_frame(buffer, buffer.pts):
+                # DEBUG: Check frame selection
+                frame_chosen = self._frame_selector.choose_frame(buffer, buffer.pts)
+                logger.info(
+                    "DEBUG [Chunk %d]: buffer_probe #%d - frame_chosen=%s, pts=%.2fs, "
+                    "start_pts=%.2fs, end_pts=%.2fs, selected_count=%d",
+                    self._chunkIdx,
+                    self._debug_frame_probe_count,
+                    frame_chosen,
+                    buffer.pts / 1e9,
+                    self._start_pts / 1e9,
+                    self._end_pts / 1e9,
+                    len(self._frame_selector._selected_pts_array),
+                )
+                
+                if frame_chosen:
                     return Gst.PadProbeReturn.OK
                 if len(self._frame_selector._selected_pts_array) == 0 and not self._eos_sent:
+                    logger.info(
+                        "DEBUG [Chunk %d]: Sending EOS - selected_pts empty, _eos_sent was=%s, pts=%.2fs",
+                        self._chunkIdx,
+                        self._eos_sent,
+                        buffer.pts / 1e9,
+                    )
                     if self._audio_present:
                         if self._audio_eos:
                             self._pipeline.send_event(Gst.Event.new_eos())
                             self._eos_sent = True
-                            logger.debug("sent eos")
+                            logger.info("DEBUG [Chunk %d]: EOS sent (audio present, audio_eos)", self._chunkIdx)
                     else:
                         self._pipeline.send_event(Gst.Event.new_eos())
                         if self._audio_convert:
                             self._audio_convert.send_event(Gst.Event.new_eos())
                         self._eos_sent = True
-                        logger.debug("sent eos")
+                        logger.info("DEBUG [Chunk %d]: EOS sent (no audio)", self._chunkIdx)
 
             return Gst.PadProbeReturn.DROP
 
         def add_to_cache(buffer, width, height):
             # Probe callback to add raw frame / jpeg image to cache
+            # DEBUG: Count frames added
+            if not hasattr(self, '_debug_frame_added_count'):
+                self._debug_frame_added_count = 0
+            self._debug_frame_added_count += 1
+            
+            logger.info(
+                "DEBUG [Chunk %d]: add_to_cache #%d - pts=%.2fs, width=%d, height=%d",
+                self._chunkIdx,
+                self._debug_frame_added_count,
+                buffer.pts / 1e9,
+                width,
+                height,
+            )
+            
             _, mapinfo = buffer.map(Gst.MapFlags.READ)
             if self._enable_jpeg_output:
                 # Buffer contains JPEG image, add to cache as is
@@ -1462,6 +1516,11 @@ class VideoFileFrameGetter:
             else:
                 self._cached_frames.append(image_tensor)
                 self._cached_frames_pts.append((buffer.pts) / 1000000000.0)
+                logger.debug(
+                    "DEBUG [Chunk %d]: Frame added to cache, total_frames=%d",
+                    self._chunkIdx,
+                    len(self._cached_frames),
+                )
             buffer.unmap(mapinfo)
 
         def add_text_to_cache(buffer):
@@ -3215,6 +3274,15 @@ class VideoFileFrameGetter:
         self._current_stream_id = getattr(chunk, "streamId", None)
         self._minio_frame_idx = 0
         self._is_warmup = False if request_id else True
+        
+        # DEBUG: Log function entry
+        logger.info(
+            "DEBUG [Chunk %d]: get_frames() called - start_pts=%.2fs, end_pts=%.2fs, file=%s",
+            chunk.chunkIdx,
+            chunk.start_pts / 1e9,
+            chunk.end_pts / 1e9,
+            chunk.file,
+        )
         with self._err_msg_lock:
             self._err_msg = None
 
@@ -3325,19 +3393,64 @@ class VideoFileFrameGetter:
             self._frame_selector.set_chunk(chunk)
             start_pts = chunk.start_pts - chunk.pts_offset_ns
 
+            # DEBUG: Log chunk and seek information
+            logger.info(
+                "DEBUG [Chunk %d]: seek_start_pts=%d (%.2fs), end_pts=%d (%.2fs), duration=%.2fs",
+                chunk.chunkIdx,
+                start_pts,
+                start_pts / 1e9,
+                chunk.end_pts,
+                chunk.end_pts / 1e9,
+                (chunk.end_pts - chunk.start_pts) / 1e9,
+            )
+
+            # BUGFIX: Reset pipeline state to ensure clean seek
+            # When reusing pipeline, need to reset to READY then back to PAUSED
+            # to ensure decoder state is cleared for proper backward seeking
+            pipeline.set_state(Gst.State.READY)
+            pipeline.get_state(Gst.CLOCK_TIME_NONE)
+            
             pipeline.set_state(Gst.State.PAUSED)
             pipeline.get_state(Gst.CLOCK_TIME_NONE)
 
-            pipeline.seek_simple(
+            # DEBUG: Log before seek
+            logger.info("DEBUG [Chunk %d]: Attempting seek to %.2fs", chunk.chunkIdx, start_pts / 1e9)
+            
+            
+            seek_result = pipeline.seek_simple(
                 Gst.Format.TIME,
                 Gst.SeekFlags.FLUSH | Gst.SeekFlags.KEY_UNIT | Gst.SeekFlags.SNAP_BEFORE,
                 start_pts,
             )
+            
+            # DEBUG: Log seek result
+            logger.info(
+                "DEBUG [Chunk %d]: Seek result=%s (True=success, False=failed)",
+                chunk.chunkIdx,
+                seek_result,
+            )
 
             # Set the pipeline to PLAYING and wait for end-of-stream or error
+            # DEBUG: Reset frame counter before loop
+            self._debug_frame_probe_count = 0
+            self._debug_frame_added_count = 0
+            
+            logger.info("DEBUG [Chunk %d]: Starting pipeline PLAYING", chunk.chunkIdx)
             pipeline.set_state(Gst.State.PLAYING)
+            decode_start = time.time()
             with TimeMeasure("Decode "):
                 self._loop.run()
+            decode_duration = time.time() - decode_start
+            
+            # DEBUG: Log decode completion
+            logger.info(
+                "DEBUG [Chunk %d]: Decode completed in %.3fs, probe_called=%d, frames_added=%d",
+                chunk.chunkIdx,
+                decode_duration,
+                self._debug_frame_probe_count,
+                self._debug_frame_added_count,
+            )
+            
             pipeline.set_state(Gst.State.PAUSED)
             if old_pipeline:
                 old_pipeline.set_state(Gst.State.NULL)
@@ -3372,8 +3485,29 @@ class VideoFileFrameGetter:
             chunk,
             self._gpu_id,
         )
+        
+        # DEBUG: Enhanced final summary
+        logger.info(
+            "DEBUG [Chunk %d]: FINAL RESULT - frames=%d, probe_calls=%d, frames_added=%d, "
+            "has_error=%s, error_msg='%s'",
+            chunk.chunkIdx,
+            len(self._cached_frames),
+            getattr(self, '_debug_frame_probe_count', 0),
+            getattr(self, '_debug_frame_added_count', 0),
+            has_error,
+            self._err_msg if has_error else "None",
+        )
+        
         if len(self._cached_frames) == 0:
-            logger.warning("No frames found for chunk %s", chunk)
+            logger.warning(
+                "⚠️  No frames found for chunk %s - probe_calls=%d, frames_added=%d, "
+                "seek_result=%s, decode_duration=%.3fs",
+                chunk,
+                getattr(self, '_debug_frame_probe_count', 0),
+                getattr(self, '_debug_frame_added_count', 0),
+                "unknown",  # seek_result는 위에서 로그됨
+                decode_duration if 'decode_duration' in locals() else 0,
+            )
         preprocessed_frames = self._preprocess(self._cached_frames)
         self._cached_frames = None
         self._frame_selector = frame_selector_backup

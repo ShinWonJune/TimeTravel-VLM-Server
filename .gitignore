@@ -1,3 +1,3 @@
-deploy/docker/local_deployment/
-deploy/docker/remote_llm_deployment/
-deploy/docker/remote_vlm_deployment/
+deploy/docker/local_deployment/.env
+deploy/docker/remote_llm_deployment/.env
+deploy/docker/remote_vlm_deployment/.env

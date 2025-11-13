@@ -1,0 +1,1721 @@
+2025-11-09 01:53:22,633 [94mINFO[0m Initializing VIA Stream Handler
+2025-11-09 01:53:22,636 [94mINFO[0m {'gdino_engine': '/root/.via/ngc_model_cache//cv_pipeline_models/swin.fp16.engine', 'tracker_config': '/tmp/via_tracker_config.yml', 'inference_interval': 1}
+2025-11-09 01:53:22,636 [94mINFO[0m Initializing VLM pipeline
+2025-11-09 01:53:22,928 [94mINFO[0m Have peer access: True
+2025-11-09 01:53:22,929 [94mINFO[0m Using model cached at /root/.via/ngc_model_cache/nvidia_tao_nvila-highres_nvila-lite-15b-highres-lita
+2025-11-09 01:53:22,930 [94mINFO[0m GPUs per VLM instance: 1
+2025-11-09 01:53:22,930 [94mINFO[0m num_vlm_procs set to 2
+2025-11-09 01:53:25,003 [94mINFO[0m Initializing DecoderProcess-0
+2025-11-09 01:53:25,022 [94mINFO[0m Initializing DecoderProcess-1
+2025-11-09 01:53:25,044 [94mINFO[0m Initializing VlmProcess-0
+2025-11-09 01:53:25,045 [94mINFO[0m Initializing VlmProcess-1
+2025-11-09 01:53:27,184 [94mINFO[0m Warmup DecoderProcess-1
+2025-11-09 01:53:27,184 [94mINFO[0m Warmup DecoderProcess-0
+2025-11-09 01:53:27,472 [94mINFO[0m Video stream found.
+2025-11-09 01:53:27,480 [94mINFO[0m Video stream found.
+2025-11-09 01:53:27,761 [95mPERF[0m Decode  execution time = 556.169 millisec
+2025-11-09 01:53:27,774 [95mPERF[0m Decode  execution time = 568.540 millisec
+2025-11-09 01:53:27,892 [94mINFO[0m Video stream found.
+2025-11-09 01:53:27,910 [94mINFO[0m Video stream found.
+2025-11-09 01:53:28,050 [95mPERF[0m Decode  execution time = 268.353 millisec
+2025-11-09 01:53:28,067 [95mPERF[0m Decode  execution time = 273.926 millisec
+2025-11-09 01:53:28,175 [94mINFO[0m Video stream found.
+2025-11-09 01:53:28,186 [94mINFO[0m Video stream found.
+2025-11-09 01:53:28,333 [95mPERF[0m Decode  execution time = 274.400 millisec
+2025-11-09 01:53:28,342 [95mPERF[0m Decode  execution time = 267.383 millisec
+2025-11-09 01:53:28,454 [94mINFO[0m Video stream found.
+2025-11-09 01:53:28,463 [94mINFO[0m Video stream found.
+2025-11-09 01:53:28,610 [95mPERF[0m Decode  execution time = 267.139 millisec
+2025-11-09 01:53:28,621 [95mPERF[0m Decode  execution time = 268.892 millisec
+2025-11-09 01:53:28,752 [94mINFO[0m Video stream found.
+2025-11-09 01:53:28,771 [94mINFO[0m Video stream found.
+2025-11-09 01:53:28,826 [95mPERF[0m Decode  execution time = 190.822 millisec
+2025-11-09 01:53:28,846 [95mPERF[0m Decode  execution time = 192.723 millisec
+2025-11-09 01:53:28,981 [94mINFO[0m Video stream found.
+2025-11-09 01:53:28,991 [94mINFO[0m Video stream found.
+2025-11-09 01:53:29,057 [95mPERF[0m Decode  execution time = 203.289 millisec
+2025-11-09 01:53:29,066 [95mPERF[0m Decode  execution time = 193.239 millisec
+2025-11-09 01:53:29,210 [94mINFO[0m Video stream found.
+2025-11-09 01:53:29,231 [94mINFO[0m Video stream found.
+2025-11-09 01:53:29,304 [95mPERF[0m Decode  execution time = 210.186 millisec
+2025-11-09 01:53:29,318 [95mPERF[0m Decode  execution time = 211.916 millisec
+2025-11-09 01:53:29,464 [94mINFO[0m Video stream found.
+2025-11-09 01:53:29,476 [94mINFO[0m Video stream found.
+2025-11-09 01:53:29,540 [95mPERF[0m Decode  execution time = 200.500 millisec
+2025-11-09 01:53:29,544 [94mINFO[0m Warmup DecoderProcess-1 done
+2025-11-09 01:53:29,546 [94mINFO[0m Initialized DecoderProcess-1
+2025-11-09 01:53:29,553 [95mPERF[0m Decode  execution time = 198.445 millisec
+2025-11-09 01:53:29,557 [94mINFO[0m Warmup DecoderProcess-0 done
+2025-11-09 01:53:29,558 [94mINFO[0m Initialized DecoderProcess-0
+2025-11-09 01:55:05,233 [95mPERF[0m VILA TRT model load execution time = 100.183 sec
+2025-11-09 01:55:05,234 [94mINFO[0m Warmup VlmProcess-1
+2025-11-09 01:55:06,029 [95mPERF[0m TRT generate execution time = 428.059 millisec
+2025-11-09 01:55:06,030 [94mINFO[0m Warmup VlmProcess-1 done
+2025-11-09 01:55:06,030 [94mINFO[0m Initialized VlmProcess-1
+2025-11-09 01:55:06,033 [94mSTATUS[0m Skipping VLM response generation for (Chunk 0: start=0.0 end=5.0 file=/opt/nvidia/via/warmup_streams/its_265.mp4)
+2025-11-09 01:55:06,042 [94mSTATUS[0m Skipping VLM response generation for (Chunk 0: start=0.0 end=5.0 file=/opt/nvidia/via/warmup_streams/its_265.mp4)
+2025-11-09 01:56:14,042 [95mPERF[0m VILA TRT model load execution time = 168.993 sec
+2025-11-09 01:56:14,043 [94mINFO[0m Warmup VlmProcess-0
+2025-11-09 01:56:14,832 [95mPERF[0m TRT generate execution time = 424.413 millisec
+2025-11-09 01:56:14,832 [94mINFO[0m Warmup VlmProcess-0 done
+2025-11-09 01:56:14,833 [94mINFO[0m Initialized VlmProcess-0
+2025-11-09 01:56:14,836 [94mINFO[0m Initialized VLM pipeline
+2025-11-09 01:56:14,836 [94mINFO[0m Initialized VIA Stream Handler
+2025-11-09 01:56:14,846 [95mPERF[0m GET /health/ready execution time = 502.110 usec
+2025-11-09 01:57:28,195 [94mINFO[0m Received add video file request - purpose Purpose.VISION, media_type MediaType.VIDEO have file UploadFile(filename='video_11.mp4', size=348364, headers=Headers({'content-disposition': 'form-data; name="file"; filename="video_11.mp4"'})), filename - , camera_id - default
+2025-11-09 01:57:28,225 [94mINFO[0m [AssetManager] Saved file - asset-id: 941ec93c-3857-4aa0-bfcf-c39a11bc61eb name: video_11.mp4
+2025-11-09 01:57:28,240 [95mPERF[0m POST /files execution time = 48.887 millisec
+2025-11-09 01:58:06,551 [94mINFO[0m Received generate_vlm_captions query, id - 941ec93c-3857-4aa0-bfcf-c39a11bc61eb (live-stream=0), chunk_duration=2, chunk_overlap_duration=0, media-offset-type=None, media-start-time=None, media-end-time=None, modelParams={"max_tokens": null, "temperature": null, "top_p": null, "top_k": null}, stream=False num_frames_per_chunk=0 vlm_input_width = 0, vlm_input_height = 0, cv_pipeline_prompt = , enable_cv_metadata = 0, enable_reasoning = 0
+2025-11-09 01:58:06,567 [94mINFO[0m Triggering oldest queued query 05421c36-c983-42f4-ae61-0e2b2ce4d128
+2025-11-09 01:58:06,581 [95mPERF[0m File Split execution time = 8.794 millisec
+2025-11-09 01:58:06,581 [94mINFO[0m Created video file query 05421c36-c983-42f4-ae61-0e2b2ce4d128 for videoId 941ec93c-3857-4aa0-bfcf-c39a11bc61eb
+2025-11-09 01:58:06,581 [94mINFO[0m Waiting for results of query 05421c36-c983-42f4-ae61-0e2b2ce4d128
+2025-11-09 01:58:06,581 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 0.00, size of response list is 0
+2025-11-09 01:58:06,581 [94mSTATUS[0m Chunk (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decode starting
+2025-11-09 01:58:06,582 [94mSTATUS[0m Chunk (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decode starting
+2025-11-09 01:58:06,582 [94mSTATUS[0m Chunk (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decode starting
+2025-11-09 01:58:06,583 [94mSTATUS[0m Chunk (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decode starting
+2025-11-09 01:58:06,583 [94mSTATUS[0m Chunk (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decode starting
+2025-11-09 01:58:06,583 [94mSTATUS[0m Chunk (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decode starting
+2025-11-09 01:58:06,584 [94mSTATUS[0m Chunk (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decode starting
+2025-11-09 01:58:06,584 [94mSTATUS[0m Chunk (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decode starting
+2025-11-09 01:58:06,795 [94mINFO[0m Video stream found.
+2025-11-09 01:58:06,879 [95mPERF[0m Decode  execution time = 200.515 millisec
+2025-11-09 01:58:06,882 [94mSTATUS[0m Chunk (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decoded, frames=16
+2025-11-09 01:58:06,885 [94mSTATUS[0m Generating VLM response for (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4)
+2025-11-09 01:58:06,891 [94mSTATUS[0m Chunk (Chunk 8: start=16.0 end=18.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decode starting
+2025-11-09 01:58:06,893 [95mPERF[0m Decode  execution time = 1.095 millisec
+2025-11-09 01:58:06,893 [93mWARNING[0m No frames found for chunk Chunk 8: start=16.0 end=18.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4
+2025-11-09 01:58:06,893 [94mSTATUS[0m Chunk (Chunk 8: start=16.0 end=18.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decoded, frames=0
+2025-11-09 01:58:06,894 [94mINFO[0m Processed chunk for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, total chunks 10, processed chunks 1, chunk Chunk 8: start=16.0 end=18.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4,
+2025-11-09 01:58:06,901 [94mSTATUS[0m Chunk (Chunk 9: start=18.0 end=19.833 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decode starting
+2025-11-09 01:58:06,903 [95mPERF[0m Decode  execution time = 742.435 usec
+2025-11-09 01:58:06,903 [93mWARNING[0m No frames found for chunk Chunk 9: start=18.0 end=19.833 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4
+2025-11-09 01:58:06,903 [94mSTATUS[0m Chunk (Chunk 9: start=18.0 end=19.833 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decoded, frames=0
+2025-11-09 01:58:06,904 [94mINFO[0m Processed chunk for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, total chunks 10, processed chunks 2, chunk Chunk 9: start=18.0 end=19.833 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4,
+2025-11-09 01:58:06,910 [94mINFO[0m Video stream found.
+2025-11-09 01:58:06,923 [94mINFO[0m Video stream found.
+2025-11-09 01:58:06,932 [94mINFO[0m Video stream found.
+2025-11-09 01:58:07,582 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:08,582 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:09,582 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:10,583 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:11,583 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:12,583 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:13,584 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:14,584 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:15,584 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:16,585 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:17,585 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:18,585 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:19,586 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:20,586 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:21,587 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:22,587 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:23,587 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:24,207 [94mINFO[0m Video stream found.
+2025-11-09 01:58:24,241 [94mINFO[0m Video stream found.
+2025-11-09 01:58:24,242 [94mINFO[0m Video stream found.
+2025-11-09 01:58:24,248 [95mPERF[0m Decode  execution time = 17.560 sec
+2025-11-09 01:58:24,261 [94mSTATUS[0m Chunk (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decoded, frames=16
+2025-11-09 01:58:24,268 [95mPERF[0m Decode  execution time = 17.551 sec
+2025-11-09 01:58:24,270 [94mSTATUS[0m Generating VLM response for (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4)
+2025-11-09 01:58:24,276 [94mSTATUS[0m Chunk (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decoded, frames=16
+2025-11-09 01:58:24,288 [95mPERF[0m Decode  execution time = 17.571 sec
+2025-11-09 01:58:24,291 [94mSTATUS[0m Chunk (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decoded, frames=16
+2025-11-09 01:58:24,326 [94mINFO[0m Video stream found.
+2025-11-09 01:58:24,334 [95mPERF[0m Decode  execution time = 17.641 sec
+2025-11-09 01:58:24,341 [94mSTATUS[0m Chunk (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decoded, frames=16
+2025-11-09 01:58:24,367 [94mSTATUS[0m Generating VLM response for (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4)
+2025-11-09 01:58:24,477 [94mSTATUS[0m Generating VLM response for (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4)
+2025-11-09 01:58:24,588 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:25,588 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:26,588 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:27,588 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:28,589 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:29,589 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:30,589 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:31,590 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:32,590 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:33,590 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:34,591 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:35,591 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:36,592 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:37,592 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:38,592 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:39,593 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:40,593 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:41,593 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:41,610 [94mSTATUS[0m Generating VLM response for (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4)
+2025-11-09 01:58:42,594 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:43,594 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:44,595 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:45,595 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:46,595 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:47,596 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:48,596 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:49,597 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:50,597 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:51,597 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:52,598 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:53,598 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:54,598 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:55,599 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:56,599 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:57,600 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:58,600 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:58,960 [95mPERF[0m Decode  execution time = 34.748 sec
+2025-11-09 01:58:58,974 [94mSTATUS[0m Chunk (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decoded, frames=16
+2025-11-09 01:58:58,985 [94mSTATUS[0m Generating VLM response for (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4)
+2025-11-09 01:58:59,069 [95mPERF[0m Decode  execution time = 52.388 sec
+2025-11-09 01:58:59,081 [94mSTATUS[0m Chunk (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decoded, frames=16
+2025-11-09 01:58:59,125 [95mPERF[0m Decode  execution time = 52.431 sec
+2025-11-09 01:58:59,129 [94mSTATUS[0m Chunk (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4) decoded, frames=16
+2025-11-09 01:58:59,386 [94mSTATUS[0m Generating VLM response for (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4)
+2025-11-09 01:58:59,600 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:58:59,670 [94mSTATUS[0m Generating VLM response for (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4)
+2025-11-09 01:59:00,601 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:59:01,601 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:59:02,601 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:59:03,602 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:59:04,602 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:59:05,603 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:59:06,603 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:59:07,603 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 01:59:08,123 [95mPERF[0m TRT generate execution time = 43.757 sec
+2025-11-09 01:59:08,125 [94mSTATUS[0m VLM response generated for (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 01:59:08,126 [94mINFO[0m Processed chunk for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, total chunks 10, processed chunks 3, chunk Chunk 5: start=10.0 end=12.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4,
+2025-11-09 01:59:08,165 [95mPERF[0m TRT generate execution time = 22.561 sec
+2025-11-09 01:59:08,166 [94mSTATUS[0m VLM response generated for (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 01:59:08,167 [94mINFO[0m Processed chunk for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, total chunks 10, processed chunks 4, chunk Chunk 3: start=6.0 end=8.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4,
+2025-11-09 01:59:08,604 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 01:59:09,604 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 01:59:10,604 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 01:59:11,605 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 01:59:12,605 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 01:59:13,606 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 01:59:14,606 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 01:59:15,293 [95mPERF[0m TRT generate execution time = 13.736 sec
+2025-11-09 01:59:15,294 [94mSTATUS[0m VLM response generated for (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4), [
+  {
+    "datetime": "00:00:33",
+    "objects": [2, 43]
+  },
+  {
+    "datetime": "00:00:34",
+    "objects": [3, 4]
+  }
+]
+2025-11-09 01:59:15,295 [94mINFO[0m Processed chunk for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, total chunks 10, processed chunks 5, chunk Chunk 4: start=8.0 end=10.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4,
+2025-11-09 01:59:15,606 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 01:59:16,607 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 01:59:17,607 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 01:59:18,607 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 01:59:19,608 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 01:59:20,410 [95mPERF[0m TRT generate execution time = 21.024 sec
+2025-11-09 01:59:20,412 [94mSTATUS[0m VLM response generated for (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 01:59:20,414 [94mINFO[0m Processed chunk for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, total chunks 10, processed chunks 6, chunk Chunk 0: start=0.0 end=2.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4,
+2025-11-09 01:59:20,455 [95mPERF[0m TRT generate execution time = 3.577 sec
+2025-11-09 01:59:20,456 [94mSTATUS[0m VLM response generated for (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 01:59:20,457 [94mINFO[0m Processed chunk for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, total chunks 10, processed chunks 7, chunk Chunk 6: start=12.0 end=14.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4,
+2025-11-09 01:59:20,500 [95mPERF[0m TRT generate execution time = 56.024 sec
+2025-11-09 01:59:20,500 [94mSTATUS[0m VLM response generated for (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4), [
+  {
+    "datetime": "00:00:28",
+    "objects": [2, 4]
+  },
+  {
+    "datetime": "00:00:29",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 01:59:20,501 [94mINFO[0m Processed chunk for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, total chunks 10, processed chunks 8, chunk Chunk 1: start=2.0 end=4.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4,
+2025-11-09 01:59:20,608 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 72.00, size of response list is 0
+2025-11-09 01:59:21,571 [95mPERF[0m TRT generate execution time = 56.483 sec
+2025-11-09 01:59:21,572 [94mSTATUS[0m VLM response generated for (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4), [
+  {
+    "datetime": "00:00:38",
+    "objects": [1, 4]
+  },
+  {
+    "datetime": "00:00:39",
+    "objects": [1, 4]
+  },
+  {
+    "datetime": "00:00:40",
+    "objects": [1, 4]
+  }
+]
+2025-11-09 01:59:21,573 [94mINFO[0m Processed chunk for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, total chunks 10, processed chunks 9, chunk Chunk 7: start=14.0 end=16.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4,
+2025-11-09 01:59:21,608 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:22,609 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:23,609 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:24,609 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:25,610 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:26,610 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:27,611 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:28,611 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:29,611 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:30,612 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:31,612 [94mINFO[0m Status for query 05421c36-c983-42f4-ae61-0e2b2ce4d128 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 01:59:32,190 [95mPERF[0m TRT generate execution time = 32.520 sec
+2025-11-09 01:59:32,190 [94mSTATUS[0m VLM response generated for (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4), [
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1, 3]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  }
+]
+2025-11-09 01:59:32,191 [94mINFO[0m Processed chunk for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, total chunks 10, processed chunks 10, chunk Chunk 2: start=4.0 end=6.0 file=/tmp/assets/941ec93c-3857-4aa0-bfcf-c39a11bc61eb/video_11.mp4,
+2025-11-09 01:59:32,192 [94mINFO[0m Processed all chunks for query 05421c36-c983-42f4-ae61-0e2b2ce4d128, VLM pipeline time 85.62 sec
+2025-11-09 01:59:32,192 [94mINFO[0m Generating summary for request 05421c36-c983-42f4-ae61-0e2b2ce4d128
+2025-11-09 01:59:32,193 [95mPERF[0m Chunk Processing - Filter and Sort execution time = 240.803 usec
+2025-11-09 01:59:32,199 [94mINFO[0m Summary generated for video file request 05421c36-c983-42f4-ae61-0e2b2ce4d128, total processing time - 85.63 seconds, summary 
+2025-11-09 01:59:32,201 [95mPERF[0m POST /generate_vlm_captions execution time = 85.668 sec
+2025-11-09 02:06:40,612 [94mINFO[0m Initializing VIA Stream Handler
+2025-11-09 02:06:40,614 [94mINFO[0m {'gdino_engine': '/root/.via/ngc_model_cache//cv_pipeline_models/swin.fp16.engine', 'tracker_config': '/tmp/via_tracker_config.yml', 'inference_interval': 1}
+2025-11-09 02:06:40,614 [94mINFO[0m Initializing VLM pipeline
+2025-11-09 02:06:40,909 [94mINFO[0m Have peer access: True
+2025-11-09 02:06:40,910 [94mINFO[0m Using model cached at /root/.via/ngc_model_cache/nvidia_tao_nvila-highres_nvila-lite-15b-highres-lita
+2025-11-09 02:06:40,912 [94mINFO[0m GPUs per VLM instance: 1
+2025-11-09 02:06:40,912 [94mINFO[0m num_vlm_procs set to 2
+2025-11-09 02:06:42,978 [94mINFO[0m Initializing VlmProcess-1
+2025-11-09 02:06:42,982 [94mINFO[0m Initializing VlmProcess-0
+2025-11-09 02:06:43,010 [94mINFO[0m Initializing DecoderProcess-0
+2025-11-09 02:06:43,013 [94mINFO[0m Initializing DecoderProcess-1
+2025-11-09 02:06:45,156 [94mINFO[0m Warmup DecoderProcess-0
+2025-11-09 02:06:45,156 [94mINFO[0m Warmup DecoderProcess-1
+2025-11-09 02:06:45,444 [94mINFO[0m Video stream found.
+2025-11-09 02:06:45,456 [94mINFO[0m Video stream found.
+2025-11-09 02:06:45,694 [95mPERF[0m Decode  execution time = 517.289 millisec
+2025-11-09 02:06:45,740 [95mPERF[0m Decode  execution time = 562.476 millisec
+2025-11-09 02:06:45,824 [94mINFO[0m Video stream found.
+2025-11-09 02:06:45,875 [94mINFO[0m Video stream found.
+2025-11-09 02:06:45,980 [95mPERF[0m Decode  execution time = 267.672 millisec
+2025-11-09 02:06:46,031 [95mPERF[0m Decode  execution time = 271.690 millisec
+2025-11-09 02:06:46,107 [94mINFO[0m Video stream found.
+2025-11-09 02:06:46,158 [94mINFO[0m Video stream found.
+2025-11-09 02:06:46,264 [95mPERF[0m Decode  execution time = 272.132 millisec
+2025-11-09 02:06:46,315 [95mPERF[0m Decode  execution time = 272.646 millisec
+2025-11-09 02:06:46,384 [94mINFO[0m Video stream found.
+2025-11-09 02:06:46,439 [94mINFO[0m Video stream found.
+2025-11-09 02:06:46,542 [95mPERF[0m Decode  execution time = 271.222 millisec
+2025-11-09 02:06:46,596 [95mPERF[0m Decode  execution time = 271.744 millisec
+2025-11-09 02:06:46,683 [94mINFO[0m Video stream found.
+2025-11-09 02:06:46,745 [94mINFO[0m Video stream found.
+2025-11-09 02:06:46,755 [95mPERF[0m Decode  execution time = 190.894 millisec
+2025-11-09 02:06:46,819 [95mPERF[0m Decode  execution time = 185.017 millisec
+2025-11-09 02:06:46,912 [94mINFO[0m Video stream found.
+2025-11-09 02:06:46,987 [94mINFO[0m Video stream found.
+2025-11-09 02:06:47,004 [95mPERF[0m Decode  execution time = 215.830 millisec
+2025-11-09 02:06:47,063 [95mPERF[0m Decode  execution time = 199.589 millisec
+2025-11-09 02:06:47,161 [94mINFO[0m Video stream found.
+2025-11-09 02:06:47,222 [94mINFO[0m Video stream found.
+2025-11-09 02:06:47,252 [95mPERF[0m Decode  execution time = 213.315 millisec
+2025-11-09 02:06:47,310 [95mPERF[0m Decode  execution time = 199.201 millisec
+2025-11-09 02:06:47,402 [94mINFO[0m Video stream found.
+2025-11-09 02:06:47,473 [94mINFO[0m Video stream found.
+2025-11-09 02:06:47,478 [95mPERF[0m Decode  execution time = 193.195 millisec
+2025-11-09 02:06:47,482 [94mINFO[0m Warmup DecoderProcess-1 done
+2025-11-09 02:06:47,484 [94mINFO[0m Initialized DecoderProcess-1
+2025-11-09 02:06:47,549 [95mPERF[0m Decode  execution time = 197.973 millisec
+2025-11-09 02:06:47,553 [94mINFO[0m Warmup DecoderProcess-0 done
+2025-11-09 02:06:47,555 [94mINFO[0m Initialized DecoderProcess-0
+2025-11-09 02:08:12,364 [94mINFO[0m Initializing VIA Stream Handler
+2025-11-09 02:08:12,366 [94mINFO[0m {'gdino_engine': '/root/.via/ngc_model_cache//cv_pipeline_models/swin.fp16.engine', 'tracker_config': '/tmp/via_tracker_config.yml', 'inference_interval': 1}
+2025-11-09 02:08:12,366 [94mINFO[0m Initializing VLM pipeline
+2025-11-09 02:08:12,652 [94mINFO[0m Have peer access: True
+2025-11-09 02:08:12,656 [94mINFO[0m Using model cached at /root/.via/ngc_model_cache/nvidia_tao_nvila-highres_nvila-lite-15b-highres-lita
+2025-11-09 02:08:12,657 [94mINFO[0m GPUs per VLM instance: 1
+2025-11-09 02:08:12,657 [94mINFO[0m num_vlm_procs set to 2
+2025-11-09 02:08:14,705 [94mINFO[0m Initializing VlmProcess-0
+2025-11-09 02:08:14,720 [94mINFO[0m Initializing VlmProcess-1
+2025-11-09 02:08:14,769 [94mINFO[0m Initializing DecoderProcess-1
+2025-11-09 02:08:14,770 [94mINFO[0m Initializing DecoderProcess-0
+2025-11-09 02:08:17,009 [94mINFO[0m Warmup DecoderProcess-1
+2025-11-09 02:08:17,009 [94mINFO[0m Warmup DecoderProcess-0
+2025-11-09 02:08:17,302 [94mINFO[0m Video stream found.
+2025-11-09 02:08:17,314 [94mINFO[0m Video stream found.
+2025-11-09 02:08:17,556 [95mPERF[0m Decode  execution time = 526.336 millisec
+2025-11-09 02:08:17,564 [95mPERF[0m Decode  execution time = 534.147 millisec
+2025-11-09 02:08:17,687 [94mINFO[0m Video stream found.
+2025-11-09 02:08:17,690 [94mINFO[0m Video stream found.
+2025-11-09 02:08:17,844 [95mPERF[0m Decode  execution time = 268.358 millisec
+2025-11-09 02:08:17,847 [95mPERF[0m Decode  execution time = 272.693 millisec
+2025-11-09 02:08:17,966 [94mINFO[0m Video stream found.
+2025-11-09 02:08:17,974 [94mINFO[0m Video stream found.
+2025-11-09 02:08:18,125 [95mPERF[0m Decode  execution time = 268.758 millisec
+2025-11-09 02:08:18,131 [95mPERF[0m Decode  execution time = 273.131 millisec
+2025-11-09 02:08:18,252 [94mINFO[0m Video stream found.
+2025-11-09 02:08:18,255 [94mINFO[0m Video stream found.
+2025-11-09 02:08:18,408 [95mPERF[0m Decode  execution time = 270.680 millisec
+2025-11-09 02:08:18,412 [95mPERF[0m Decode  execution time = 268.946 millisec
+2025-11-09 02:08:18,571 [94mINFO[0m Video stream found.
+2025-11-09 02:08:18,580 [94mINFO[0m Video stream found.
+2025-11-09 02:08:18,645 [95mPERF[0m Decode  execution time = 186.218 millisec
+2025-11-09 02:08:18,657 [95mPERF[0m Decode  execution time = 188.607 millisec
+2025-11-09 02:08:18,806 [94mINFO[0m Video stream found.
+2025-11-09 02:08:18,815 [94mINFO[0m Video stream found.
+2025-11-09 02:08:18,879 [95mPERF[0m Decode  execution time = 197.122 millisec
+2025-11-09 02:08:18,890 [95mPERF[0m Decode  execution time = 196.123 millisec
+2025-11-09 02:08:19,038 [94mINFO[0m Video stream found.
+2025-11-09 02:08:19,049 [94mINFO[0m Video stream found.
+2025-11-09 02:08:19,132 [95mPERF[0m Decode  execution time = 217.607 millisec
+2025-11-09 02:08:19,140 [95mPERF[0m Decode  execution time = 210.899 millisec
+2025-11-09 02:08:19,295 [94mINFO[0m Video stream found.
+2025-11-09 02:08:19,305 [94mINFO[0m Video stream found.
+2025-11-09 02:08:19,370 [95mPERF[0m Decode  execution time = 198.318 millisec
+2025-11-09 02:08:19,373 [94mINFO[0m Warmup DecoderProcess-0 done
+2025-11-09 02:08:19,373 [94mINFO[0m Initialized DecoderProcess-0
+2025-11-09 02:08:19,382 [95mPERF[0m Decode  execution time = 201.452 millisec
+2025-11-09 02:08:19,388 [94mINFO[0m Warmup DecoderProcess-1 done
+2025-11-09 02:08:19,389 [94mINFO[0m Initialized DecoderProcess-1
+2025-11-09 02:09:54,747 [95mPERF[0m VILA TRT model load execution time = 100.036 sec
+2025-11-09 02:09:54,747 [94mINFO[0m Warmup VlmProcess-0
+2025-11-09 02:09:55,563 [95mPERF[0m TRT generate execution time = 434.361 millisec
+2025-11-09 02:09:55,563 [94mINFO[0m Warmup VlmProcess-0 done
+2025-11-09 02:09:55,563 [94mINFO[0m Initialized VlmProcess-0
+2025-11-09 02:09:55,567 [94mSTATUS[0m Skipping VLM response generation for (Chunk 0: start=0.0 end=5.0 file=/opt/nvidia/via/warmup_streams/its_265.mp4)
+2025-11-09 02:09:55,575 [94mSTATUS[0m Skipping VLM response generation for (Chunk 0: start=0.0 end=5.0 file=/opt/nvidia/via/warmup_streams/its_265.mp4)
+2025-11-09 02:11:03,029 [95mPERF[0m VILA TRT model load execution time = 168.306 sec
+2025-11-09 02:11:03,029 [94mINFO[0m Warmup VlmProcess-1
+2025-11-09 02:11:03,795 [95mPERF[0m TRT generate execution time = 420.764 millisec
+2025-11-09 02:11:03,795 [94mINFO[0m Warmup VlmProcess-1 done
+2025-11-09 02:11:03,796 [94mINFO[0m Initialized VlmProcess-1
+2025-11-09 02:11:03,799 [94mINFO[0m Initialized VLM pipeline
+2025-11-09 02:11:03,799 [94mINFO[0m Initialized VIA Stream Handler
+2025-11-09 02:11:03,812 [95mPERF[0m GET /health/ready execution time = 391.006 usec
+2025-11-09 02:11:12,026 [94mINFO[0m Received add video file request - purpose Purpose.VISION, media_type MediaType.VIDEO have file UploadFile(filename='video_11.mp4', size=348364, headers=Headers({'content-disposition': 'form-data; name="file"; filename="video_11.mp4"'})), filename - , camera_id - default
+2025-11-09 02:11:12,062 [94mINFO[0m [AssetManager] Saved file - asset-id: cb02957e-a845-4138-9a35-6bc05e750fdb name: video_11.mp4
+2025-11-09 02:11:12,076 [95mPERF[0m POST /files execution time = 55.447 millisec
+2025-11-09 02:11:25,088 [94mINFO[0m Received generate_vlm_captions query, id - cb02957e-a845-4138-9a35-6bc05e750fdb (live-stream=0), chunk_duration=2, chunk_overlap_duration=0, media-offset-type=None, media-start-time=None, media-end-time=None, modelParams={"max_tokens": null, "temperature": null, "top_p": null, "top_k": null}, stream=False num_frames_per_chunk=0 vlm_input_width = 0, vlm_input_height = 0, cv_pipeline_prompt = , enable_cv_metadata = 0, enable_reasoning = 0
+2025-11-09 02:11:25,104 [94mINFO[0m Triggering oldest queued query 1002e672-7b40-441e-bf77-aa4d28d2edfc
+2025-11-09 02:11:25,117 [95mPERF[0m File Split execution time = 7.652 millisec
+2025-11-09 02:11:25,117 [94mINFO[0m Created video file query 1002e672-7b40-441e-bf77-aa4d28d2edfc for videoId cb02957e-a845-4138-9a35-6bc05e750fdb
+2025-11-09 02:11:25,118 [94mINFO[0m Waiting for results of query 1002e672-7b40-441e-bf77-aa4d28d2edfc
+2025-11-09 02:11:25,118 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 0.00, size of response list is 0
+2025-11-09 02:11:25,121 [94mSTATUS[0m Chunk (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decode starting
+2025-11-09 02:11:25,122 [94mSTATUS[0m Chunk (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decode starting
+2025-11-09 02:11:25,122 [94mSTATUS[0m Chunk (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decode starting
+2025-11-09 02:11:25,122 [94mSTATUS[0m Chunk (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decode starting
+2025-11-09 02:11:25,123 [94mSTATUS[0m Chunk (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decode starting
+2025-11-09 02:11:25,123 [94mSTATUS[0m Chunk (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decode starting
+2025-11-09 02:11:25,123 [94mSTATUS[0m Chunk (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decode starting
+2025-11-09 02:11:25,124 [94mSTATUS[0m Chunk (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decode starting
+2025-11-09 02:11:25,322 [94mINFO[0m Video stream found.
+2025-11-09 02:11:25,328 [94mINFO[0m Video stream found.
+2025-11-09 02:11:25,398 [95mPERF[0m Decode  execution time = 182.101 millisec
+2025-11-09 02:11:25,413 [94mSTATUS[0m Chunk (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decoded, frames=16
+2025-11-09 02:11:25,422 [94mSTATUS[0m Chunk (Chunk 8: start=16.0 end=18.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decode starting
+2025-11-09 02:11:25,423 [95mPERF[0m Decode  execution time = 221.342 millisec
+2025-11-09 02:11:25,425 [95mPERF[0m Decode  execution time = 1.488 millisec
+2025-11-09 02:11:25,425 [93mWARNING[0m No frames found for chunk Chunk 8: start=16.0 end=18.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4
+2025-11-09 02:11:25,425 [94mSTATUS[0m Chunk (Chunk 8: start=16.0 end=18.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decoded, frames=0
+2025-11-09 02:11:25,426 [94mINFO[0m Processed chunk for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, total chunks 10, processed chunks 1, chunk Chunk 8: start=16.0 end=18.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4,
+2025-11-09 02:11:25,428 [94mSTATUS[0m Generating VLM response for (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4)
+2025-11-09 02:11:25,429 [94mINFO[0m Video stream found.
+2025-11-09 02:11:25,432 [94mSTATUS[0m Chunk (Chunk 9: start=18.0 end=19.833 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decode starting
+2025-11-09 02:11:25,434 [95mPERF[0m Decode  execution time = 1.243 millisec
+2025-11-09 02:11:25,435 [93mWARNING[0m No frames found for chunk Chunk 9: start=18.0 end=19.833 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4
+2025-11-09 02:11:25,435 [94mSTATUS[0m Chunk (Chunk 9: start=18.0 end=19.833 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decoded, frames=0
+2025-11-09 02:11:25,435 [94mINFO[0m Processed chunk for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, total chunks 10, processed chunks 2, chunk Chunk 9: start=18.0 end=19.833 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4,
+2025-11-09 02:11:25,436 [94mSTATUS[0m Chunk (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decoded, frames=16
+2025-11-09 02:11:25,445 [94mSTATUS[0m Generating VLM response for (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4)
+2025-11-09 02:11:25,451 [94mINFO[0m Video stream found.
+2025-11-09 02:11:25,472 [94mINFO[0m Video stream found.
+2025-11-09 02:11:25,472 [94mINFO[0m Video stream found.
+2025-11-09 02:11:25,477 [94mINFO[0m Video stream found.
+2025-11-09 02:11:25,530 [94mINFO[0m Video stream found.
+2025-11-09 02:11:25,530 [95mPERF[0m Decode  execution time = 316.300 millisec
+2025-11-09 02:11:25,537 [94mSTATUS[0m Chunk (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decoded, frames=16
+2025-11-09 02:11:25,565 [95mPERF[0m Decode  execution time = 340.578 millisec
+2025-11-09 02:11:25,570 [94mSTATUS[0m Chunk (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decoded, frames=16
+2025-11-09 02:11:25,595 [95mPERF[0m Decode  execution time = 343.454 millisec
+2025-11-09 02:11:25,598 [94mSTATUS[0m Chunk (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decoded, frames=16
+2025-11-09 02:11:25,601 [95mPERF[0m Decode  execution time = 286.219 millisec
+2025-11-09 02:11:25,604 [94mSTATUS[0m Chunk (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decoded, frames=16
+2025-11-09 02:11:25,660 [94mSTATUS[0m Generating VLM response for (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4)
+2025-11-09 02:11:25,661 [94mSTATUS[0m Generating VLM response for (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4)
+2025-11-09 02:11:26,118 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:27,118 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:28,119 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:29,119 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:30,119 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:31,120 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:32,120 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:33,121 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:34,121 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:35,121 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:36,122 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:37,122 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:38,122 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:39,123 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:40,123 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:41,123 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:42,124 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:43,124 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:43,147 [94mSTATUS[0m Generating VLM response for (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4)
+2025-11-09 02:11:44,125 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:45,125 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:45,318 [94mSTATUS[0m Generating VLM response for (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4)
+2025-11-09 02:11:46,125 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:47,126 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:48,126 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:49,126 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:50,127 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:51,127 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:52,128 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:53,128 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:54,128 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:55,129 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:56,129 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:57,129 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:58,130 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:11:59,130 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:12:00,130 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:12:00,647 [95mPERF[0m TRT generate execution time = 34.987 sec
+2025-11-09 02:12:00,650 [94mSTATUS[0m VLM response generated for (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4), []
+2025-11-09 02:12:00,651 [94mINFO[0m Processed chunk for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, total chunks 10, processed chunks 3, chunk Chunk 6: start=12.0 end=14.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4,
+2025-11-09 02:12:01,131 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:12:02,131 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:12:02,403 [95mPERF[0m Decode  execution time = 37.179 sec
+2025-11-09 02:12:02,413 [94mSTATUS[0m Chunk (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decoded, frames=16
+2025-11-09 02:12:02,418 [94mSTATUS[0m Generating VLM response for (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4)
+2025-11-09 02:12:03,131 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:12:04,132 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:12:05,132 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:12:06,132 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:12:07,133 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:12:08,133 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:12:09,134 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:12:10,134 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:12:10,702 [95mPERF[0m TRT generate execution time = 25.384 sec
+2025-11-09 02:12:10,704 [95mPERF[0m TRT generate execution time = 45.052 sec
+2025-11-09 02:12:10,707 [94mSTATUS[0m VLM response generated for (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4), [
+  {
+    "datetime": "00:00:31",
+    "objects": [1, 3]
+  },
+  {
+    "datetime": "00:00:32",
+    "objects": [2, 4]
+  }
+]
+2025-11-09 02:12:10,708 [94mSTATUS[0m VLM response generated for (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:12:10,709 [94mINFO[0m Processed chunk for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, total chunks 10, processed chunks 4, chunk Chunk 3: start=6.0 end=8.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4,
+2025-11-09 02:12:10,710 [94mINFO[0m Processed chunk for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, total chunks 10, processed chunks 5, chunk Chunk 4: start=8.0 end=10.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4,
+2025-11-09 02:12:11,134 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:12,135 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:13,135 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:14,135 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:15,136 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:16,136 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:17,137 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:18,137 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:19,137 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:19,689 [95mPERF[0m Decode  execution time = 54.460 sec
+2025-11-09 02:12:19,698 [94mSTATUS[0m Chunk (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4) decoded, frames=16
+2025-11-09 02:12:19,707 [94mSTATUS[0m Generating VLM response for (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4)
+2025-11-09 02:12:20,138 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:21,138 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:22,138 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:23,139 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:12:23,306 [95mPERF[0m TRT generate execution time = 12.599 sec
+2025-11-09 02:12:23,307 [94mSTATUS[0m VLM response generated for (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:12:23,308 [94mINFO[0m Processed chunk for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, total chunks 10, processed chunks 6, chunk Chunk 0: start=0.0 end=2.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4,
+2025-11-09 02:12:23,311 [95mPERF[0m TRT generate execution time = 20.924 sec
+2025-11-09 02:12:23,312 [94mSTATUS[0m VLM response generated for (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:12:23,313 [94mINFO[0m Processed chunk for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, total chunks 10, processed chunks 7, chunk Chunk 1: start=2.0 end=4.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4,
+2025-11-09 02:12:23,399 [95mPERF[0m TRT generate execution time = 3.261 sec
+2025-11-09 02:12:23,399 [94mSTATUS[0m VLM response generated for (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:12:23,400 [94mINFO[0m Processed chunk for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, total chunks 10, processed chunks 8, chunk Chunk 5: start=10.0 end=12.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4,
+2025-11-09 02:12:24,139 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 72.00, size of response list is 0
+2025-11-09 02:12:24,620 [95mPERF[0m TRT generate execution time = 4.209 sec
+2025-11-09 02:12:24,621 [94mSTATUS[0m VLM response generated for (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4), [
+  {
+    "datetime": "00:00:38",
+    "objects": [1, 4]
+  },
+  {
+    "datetime": "00:00:39",
+    "objects": [1, 4]
+  },
+  {
+    "datetime": "00:00:40",
+    "objects": [1, 4]
+  }
+]
+2025-11-09 02:12:24,622 [94mINFO[0m Processed chunk for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, total chunks 10, processed chunks 9, chunk Chunk 7: start=14.0 end=16.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4,
+2025-11-09 02:12:25,139 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:26,140 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:27,140 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:28,140 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:29,141 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:30,141 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:31,141 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:32,142 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:33,142 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:34,143 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:35,143 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:36,143 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:37,144 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:38,144 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:39,144 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:40,145 [94mINFO[0m Status for query 1002e672-7b40-441e-bf77-aa4d28d2edfc is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:12:40,722 [95mPERF[0m TRT generate execution time = 57.590 sec
+2025-11-09 02:12:40,722 [94mSTATUS[0m VLM response generated for (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4), [
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1, 3]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  }
+]
+2025-11-09 02:12:40,724 [94mINFO[0m Processed chunk for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, total chunks 10, processed chunks 10, chunk Chunk 2: start=4.0 end=6.0 file=/tmp/assets/cb02957e-a845-4138-9a35-6bc05e750fdb/video_11.mp4,
+2025-11-09 02:12:40,724 [94mINFO[0m Processed all chunks for query 1002e672-7b40-441e-bf77-aa4d28d2edfc, VLM pipeline time 75.62 sec
+2025-11-09 02:12:40,724 [94mINFO[0m Generating summary for request 1002e672-7b40-441e-bf77-aa4d28d2edfc
+2025-11-09 02:12:40,725 [95mPERF[0m Chunk Processing - Filter and Sort execution time = 256.062 usec
+2025-11-09 02:12:40,732 [94mINFO[0m Summary generated for video file request 1002e672-7b40-441e-bf77-aa4d28d2edfc, total processing time - 75.62 seconds, summary 
+2025-11-09 02:12:40,734 [95mPERF[0m POST /generate_vlm_captions execution time = 75.664 sec
+2025-11-09 02:17:50,665 [94mINFO[0m Initializing VIA Stream Handler
+2025-11-09 02:17:50,667 [94mINFO[0m {'gdino_engine': '/root/.via/ngc_model_cache//cv_pipeline_models/swin.fp16.engine', 'tracker_config': '/tmp/via_tracker_config.yml', 'inference_interval': 1}
+2025-11-09 02:17:50,668 [94mINFO[0m Initializing VLM pipeline
+2025-11-09 02:17:50,958 [94mINFO[0m Have peer access: True
+2025-11-09 02:17:50,961 [94mINFO[0m Using model cached at /root/.via/ngc_model_cache/nvidia_tao_nvila-highres_nvila-lite-15b-highres-lita
+2025-11-09 02:17:50,961 [94mINFO[0m GPUs per VLM instance: 1
+2025-11-09 02:17:50,962 [94mINFO[0m num_vlm_procs set to 2
+2025-11-09 02:17:53,039 [94mINFO[0m Initializing VlmProcess-1
+2025-11-09 02:17:53,042 [94mINFO[0m Initializing DecoderProcess-1
+2025-11-09 02:17:53,071 [94mINFO[0m Initializing VlmProcess-0
+2025-11-09 02:17:53,072 [94mINFO[0m Initializing DecoderProcess-0
+2025-11-09 02:17:54,292 [94mINFO[0m Warmup DecoderProcess-0
+2025-11-09 02:17:54,312 [94mINFO[0m Warmup DecoderProcess-1
+2025-11-09 02:17:54,600 [94mINFO[0m Video stream found.
+2025-11-09 02:17:54,606 [94mINFO[0m Video stream found.
+2025-11-09 02:17:54,849 [95mPERF[0m Decode  execution time = 534.792 millisec
+2025-11-09 02:17:54,852 [95mPERF[0m Decode  execution time = 518.402 millisec
+2025-11-09 02:17:54,983 [94mINFO[0m Video stream found.
+2025-11-09 02:17:54,988 [94mINFO[0m Video stream found.
+2025-11-09 02:17:55,141 [95mPERF[0m Decode  execution time = 273.760 millisec
+2025-11-09 02:17:55,146 [95mPERF[0m Decode  execution time = 273.704 millisec
+2025-11-09 02:17:55,264 [94mINFO[0m Video stream found.
+2025-11-09 02:17:55,269 [94mINFO[0m Video stream found.
+2025-11-09 02:17:55,422 [95mPERF[0m Decode  execution time = 267.634 millisec
+2025-11-09 02:17:55,426 [95mPERF[0m Decode  execution time = 272.330 millisec
+2025-11-09 02:17:55,540 [94mINFO[0m Video stream found.
+2025-11-09 02:17:55,546 [94mINFO[0m Video stream found.
+2025-11-09 02:17:55,698 [95mPERF[0m Decode  execution time = 268.610 millisec
+2025-11-09 02:17:55,704 [95mPERF[0m Decode  execution time = 272.956 millisec
+2025-11-09 02:17:55,843 [94mINFO[0m Video stream found.
+2025-11-09 02:17:55,852 [94mINFO[0m Video stream found.
+2025-11-09 02:17:55,916 [95mPERF[0m Decode  execution time = 185.280 millisec
+2025-11-09 02:17:55,928 [95mPERF[0m Decode  execution time = 187.427 millisec
+2025-11-09 02:17:56,075 [94mINFO[0m Video stream found.
+2025-11-09 02:17:56,082 [94mINFO[0m Video stream found.
+2025-11-09 02:17:56,149 [95mPERF[0m Decode  execution time = 197.034 millisec
+2025-11-09 02:17:56,156 [95mPERF[0m Decode  execution time = 191.616 millisec
+2025-11-09 02:17:56,308 [94mINFO[0m Video stream found.
+2025-11-09 02:17:56,312 [94mINFO[0m Video stream found.
+2025-11-09 02:17:56,405 [95mPERF[0m Decode  execution time = 212.930 millisec
+2025-11-09 02:17:56,407 [95mPERF[0m Decode  execution time = 216.976 millisec
+2025-11-09 02:17:56,545 [94mINFO[0m Video stream found.
+2025-11-09 02:17:56,572 [94mINFO[0m Video stream found.
+2025-11-09 02:17:56,621 [95mPERF[0m Decode  execution time = 187.703 millisec
+2025-11-09 02:17:56,625 [94mINFO[0m Warmup DecoderProcess-1 done
+2025-11-09 02:17:56,626 [94mINFO[0m Initialized DecoderProcess-1
+2025-11-09 02:17:56,648 [95mPERF[0m Decode  execution time = 198.529 millisec
+2025-11-09 02:17:56,652 [94mINFO[0m Warmup DecoderProcess-0 done
+2025-11-09 02:17:56,653 [94mINFO[0m Initialized DecoderProcess-0
+2025-11-09 02:19:10,343 [95mPERF[0m VILA TRT model load execution time = 77.269 sec
+2025-11-09 02:19:10,344 [94mINFO[0m Warmup VlmProcess-0
+2025-11-09 02:19:11,109 [95mPERF[0m TRT generate execution time = 425.976 millisec
+2025-11-09 02:19:11,109 [94mINFO[0m Warmup VlmProcess-0 done
+2025-11-09 02:19:11,110 [94mINFO[0m Initialized VlmProcess-0
+2025-11-09 02:19:11,122 [94mSTATUS[0m Skipping VLM response generation for (Chunk 0: start=0.0 end=5.0 file=/opt/nvidia/via/warmup_streams/its_265.mp4)
+2025-11-09 02:19:11,126 [94mSTATUS[0m Skipping VLM response generation for (Chunk 0: start=0.0 end=5.0 file=/opt/nvidia/via/warmup_streams/its_265.mp4)
+2025-11-09 02:20:19,352 [95mPERF[0m VILA TRT model load execution time = 146.310 sec
+2025-11-09 02:20:19,353 [94mINFO[0m Warmup VlmProcess-1
+2025-11-09 02:20:20,107 [95mPERF[0m TRT generate execution time = 421.330 millisec
+2025-11-09 02:20:20,107 [94mINFO[0m Warmup VlmProcess-1 done
+2025-11-09 02:20:20,107 [94mINFO[0m Initialized VlmProcess-1
+2025-11-09 02:20:20,110 [94mINFO[0m Initialized VLM pipeline
+2025-11-09 02:20:20,111 [94mINFO[0m Initialized VIA Stream Handler
+2025-11-09 02:20:20,126 [95mPERF[0m GET /health/ready execution time = 368.834 usec
+2025-11-09 02:20:26,343 [94mINFO[0m Received add video file request - purpose Purpose.VISION, media_type MediaType.VIDEO have file UploadFile(filename='video_11.mp4', size=348364, headers=Headers({'content-disposition': 'form-data; name="file"; filename="video_11.mp4"'})), filename - , camera_id - default
+2025-11-09 02:20:26,379 [94mINFO[0m [AssetManager] Saved file - asset-id: 24e60690-2e63-42f2-82e3-9a8249146adf name: video_11.mp4
+2025-11-09 02:20:26,402 [95mPERF[0m POST /files execution time = 63.394 millisec
+2025-11-09 02:20:38,783 [94mINFO[0m Received generate_vlm_captions query, id - 24e60690-2e63-42f2-82e3-9a8249146adf (live-stream=0), chunk_duration=2, chunk_overlap_duration=0, media-offset-type=None, media-start-time=None, media-end-time=None, modelParams={"max_tokens": null, "temperature": null, "top_p": null, "top_k": null}, stream=False num_frames_per_chunk=0 vlm_input_width = 0, vlm_input_height = 0, cv_pipeline_prompt = , enable_cv_metadata = 0, enable_reasoning = 0
+2025-11-09 02:20:38,799 [94mINFO[0m Triggering oldest queued query 4a5f9218-868e-45c4-9c81-cc34974eb270
+2025-11-09 02:20:38,813 [95mPERF[0m File Split execution time = 8.178 millisec
+2025-11-09 02:20:38,813 [94mINFO[0m Created video file query 4a5f9218-868e-45c4-9c81-cc34974eb270 for videoId 24e60690-2e63-42f2-82e3-9a8249146adf
+2025-11-09 02:20:38,813 [94mINFO[0m Waiting for results of query 4a5f9218-868e-45c4-9c81-cc34974eb270
+2025-11-09 02:20:38,813 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 0.00, size of response list is 0
+2025-11-09 02:20:38,817 [94mSTATUS[0m Chunk (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decode starting
+2025-11-09 02:20:38,818 [94mSTATUS[0m Chunk (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decode starting
+2025-11-09 02:20:38,819 [94mSTATUS[0m Chunk (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decode starting
+2025-11-09 02:20:38,819 [94mSTATUS[0m Chunk (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decode starting
+2025-11-09 02:20:38,820 [94mSTATUS[0m Chunk (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decode starting
+2025-11-09 02:20:38,820 [94mSTATUS[0m Chunk (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decode starting
+2025-11-09 02:20:38,820 [94mSTATUS[0m Chunk (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decode starting
+2025-11-09 02:20:38,820 [94mSTATUS[0m Chunk (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decode starting
+2025-11-09 02:20:39,140 [94mINFO[0m Video stream found.
+2025-11-09 02:20:39,140 [94mINFO[0m Video stream found.
+2025-11-09 02:20:39,181 [94mINFO[0m Video stream found.
+2025-11-09 02:20:39,185 [95mPERF[0m Decode  execution time = 261.955 millisec
+2025-11-09 02:20:39,195 [95mPERF[0m Decode  execution time = 272.695 millisec
+2025-11-09 02:20:39,197 [94mINFO[0m Video stream found.
+2025-11-09 02:20:39,198 [94mSTATUS[0m Chunk (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decoded, frames=16
+2025-11-09 02:20:39,204 [94mSTATUS[0m Chunk (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decoded, frames=16
+2025-11-09 02:20:39,204 [94mSTATUS[0m Chunk (Chunk 8: start=16.0 end=18.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decode starting
+2025-11-09 02:20:39,207 [95mPERF[0m Decode  execution time = 1.270 millisec
+2025-11-09 02:20:39,207 [93mWARNING[0m No frames found for chunk Chunk 8: start=16.0 end=18.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4
+2025-11-09 02:20:39,207 [94mSTATUS[0m Chunk (Chunk 8: start=16.0 end=18.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decoded, frames=0
+2025-11-09 02:20:39,208 [94mINFO[0m Processed chunk for query 4a5f9218-868e-45c4-9c81-cc34974eb270, total chunks 10, processed chunks 1, chunk Chunk 8: start=16.0 end=18.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4,
+2025-11-09 02:20:39,209 [94mSTATUS[0m Chunk (Chunk 9: start=18.0 end=19.833 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decode starting
+2025-11-09 02:20:39,211 [95mPERF[0m Decode  execution time = 1.001 millisec
+2025-11-09 02:20:39,211 [93mWARNING[0m No frames found for chunk Chunk 9: start=18.0 end=19.833 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4
+2025-11-09 02:20:39,212 [94mSTATUS[0m Chunk (Chunk 9: start=18.0 end=19.833 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decoded, frames=0
+2025-11-09 02:20:39,213 [94mINFO[0m Processed chunk for query 4a5f9218-868e-45c4-9c81-cc34974eb270, total chunks 10, processed chunks 2, chunk Chunk 9: start=18.0 end=19.833 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4,
+2025-11-09 02:20:39,214 [94mSTATUS[0m Generating VLM response for (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4)
+2025-11-09 02:20:39,234 [94mINFO[0m Video stream found.
+2025-11-09 02:20:39,239 [94mINFO[0m Video stream found.
+2025-11-09 02:20:39,813 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:40,814 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:41,814 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:42,814 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:43,815 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:44,815 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:45,816 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:46,816 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:47,816 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:48,817 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:49,817 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:50,817 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:51,168 [94mINFO[0m Video stream found.
+2025-11-09 02:20:51,818 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:52,818 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:53,819 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:54,819 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:55,819 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:56,520 [94mSTATUS[0m Generating VLM response for (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4)
+2025-11-09 02:20:56,577 [94mINFO[0m Video stream found.
+2025-11-09 02:20:56,820 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:57,820 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:58,820 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:20:59,821 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:00,821 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:01,821 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:02,822 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:03,822 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:04,823 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:05,823 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:06,823 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:07,824 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:08,824 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:09,824 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:10,825 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:11,825 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:12,825 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:13,826 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:14,013 [95mPERF[0m Decode  execution time = 35.080 sec
+2025-11-09 02:21:14,018 [94mSTATUS[0m Chunk (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decoded, frames=16
+2025-11-09 02:21:14,024 [95mPERF[0m Decode  execution time = 35.145 sec
+2025-11-09 02:21:14,028 [94mSTATUS[0m Chunk (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decoded, frames=16
+2025-11-09 02:21:14,058 [95mPERF[0m Decode  execution time = 35.135 sec
+2025-11-09 02:21:14,064 [94mSTATUS[0m Chunk (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decoded, frames=16
+2025-11-09 02:21:14,083 [95mPERF[0m Decode  execution time = 34.936 sec
+2025-11-09 02:21:14,090 [94mSTATUS[0m Chunk (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decoded, frames=16
+2025-11-09 02:21:14,147 [95mPERF[0m Decode  execution time = 35.001 sec
+2025-11-09 02:21:14,147 [94mSTATUS[0m Generating VLM response for (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4)
+2025-11-09 02:21:14,168 [94mSTATUS[0m Generating VLM response for (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4)
+2025-11-09 02:21:14,826 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:15,826 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:16,826 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:17,827 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:18,827 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:19,827 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:20,827 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:21,828 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:22,828 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:23,828 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:24,828 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:25,829 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:26,829 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:27,829 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:28,830 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:29,830 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:30,830 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:31,742 [94mSTATUS[0m Generating VLM response for (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4)
+2025-11-09 02:21:31,743 [94mSTATUS[0m Chunk (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decoded, frames=16
+2025-11-09 02:21:31,830 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:32,831 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:33,831 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:34,831 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:35,832 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:36,832 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:37,833 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:38,833 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:39,833 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:40,833 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:41,834 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:42,834 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:43,834 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:44,835 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:45,835 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:46,836 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:47,836 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:48,836 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:49,041 [94mSTATUS[0m Generating VLM response for (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4)
+2025-11-09 02:21:49,836 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:50,837 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:51,837 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:52,837 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:53,838 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:54,838 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:55,839 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:56,839 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:57,839 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:58,840 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:21:59,840 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:00,840 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:01,841 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:02,841 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:03,841 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:04,842 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:05,842 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:06,461 [95mPERF[0m Decode  execution time = 87.545 sec
+2025-11-09 02:22:06,470 [94mSTATUS[0m Generating VLM response for (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4)
+2025-11-09 02:22:06,471 [94mSTATUS[0m Chunk (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4) decoded, frames=16
+2025-11-09 02:22:06,842 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:07,843 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:08,543 [94mSTATUS[0m Generating VLM response for (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4)
+2025-11-09 02:22:08,843 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:09,844 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:10,844 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:11,844 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:12,845 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:13,845 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:14,845 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:15,846 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:16,846 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:17,846 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:18,847 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:19,847 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:20,847 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:21,848 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:22,848 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:23,849 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:24,849 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:25,849 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:26,850 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:27,850 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:22:28,743 [95mPERF[0m TRT generate execution time = 74.596 sec
+2025-11-09 02:22:28,745 [94mSTATUS[0m VLM response generated for (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:22:28,747 [94mINFO[0m Processed chunk for query 4a5f9218-868e-45c4-9c81-cc34974eb270, total chunks 10, processed chunks 3, chunk Chunk 0: start=0.0 end=2.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4,
+2025-11-09 02:22:28,789 [95mPERF[0m TRT generate execution time = 53.645 sec
+2025-11-09 02:22:28,789 [94mSTATUS[0m VLM response generated for (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:22:28,790 [94mINFO[0m Processed chunk for query 4a5f9218-868e-45c4-9c81-cc34974eb270, total chunks 10, processed chunks 4, chunk Chunk 5: start=10.0 end=12.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4,
+2025-11-09 02:22:28,850 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:22:28,875 [95mPERF[0m TRT generate execution time = 21.841 sec
+2025-11-09 02:22:28,876 [94mSTATUS[0m VLM response generated for (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:22:28,877 [94mINFO[0m Processed chunk for query 4a5f9218-868e-45c4-9c81-cc34974eb270, total chunks 10, processed chunks 5, chunk Chunk 2: start=4.0 end=6.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4,
+2025-11-09 02:22:29,851 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:22:30,539 [95mPERF[0m TRT generate execution time = 2.895 sec
+2025-11-09 02:22:30,540 [94mSTATUS[0m VLM response generated for (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:22:30,541 [94mINFO[0m Processed chunk for query 4a5f9218-868e-45c4-9c81-cc34974eb270, total chunks 10, processed chunks 6, chunk Chunk 7: start=14.0 end=16.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4,
+2025-11-09 02:22:30,851 [94mINFO[0m Status for query 4a5f9218-868e-45c4-9c81-cc34974eb270 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:22:31,629 [95mPERF[0m TRT generate execution time = 77.462 sec
+2025-11-09 02:22:31,631 [94mSTATUS[0m VLM response generated for (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:22:31,632 [94mINFO[0m Processed chunk for query 4a5f9218-868e-45c4-9c81-cc34974eb270, total chunks 10, processed chunks 7, chunk Chunk 1: start=2.0 end=4.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4,
+2025-11-09 02:22:31,675 [95mPERF[0m TRT generate execution time = 59.933 sec
+2025-11-09 02:22:31,677 [95mPERF[0m TRT generate execution time = 25.207 sec
+2025-11-09 02:22:31,678 [94mSTATUS[0m VLM response generated for (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:22:31,678 [94mSTATUS[0m VLM response generated for (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:22:31,679 [94mINFO[0m Processed chunk for query 4a5f9218-868e-45c4-9c81-cc34974eb270, total chunks 10, processed chunks 8, chunk Chunk 4: start=8.0 end=10.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4,
+2025-11-09 02:22:31,679 [94mINFO[0m Processed chunk for query 4a5f9218-868e-45c4-9c81-cc34974eb270, total chunks 10, processed chunks 9, chunk Chunk 6: start=12.0 end=14.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4,
+2025-11-09 02:22:31,758 [95mPERF[0m TRT generate execution time = 3.476 sec
+2025-11-09 02:22:31,759 [94mSTATUS[0m VLM response generated for (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:22:31,759 [94mINFO[0m Processed chunk for query 4a5f9218-868e-45c4-9c81-cc34974eb270, total chunks 10, processed chunks 10, chunk Chunk 3: start=6.0 end=8.0 file=/tmp/assets/24e60690-2e63-42f2-82e3-9a8249146adf/video_11.mp4,
+2025-11-09 02:22:31,760 [94mINFO[0m Processed all chunks for query 4a5f9218-868e-45c4-9c81-cc34974eb270, VLM pipeline time 112.96 sec
+2025-11-09 02:22:31,760 [94mINFO[0m Generating summary for request 4a5f9218-868e-45c4-9c81-cc34974eb270
+2025-11-09 02:22:31,761 [95mPERF[0m Chunk Processing - Filter and Sort execution time = 263.453 usec
+2025-11-09 02:22:31,767 [94mINFO[0m Summary generated for video file request 4a5f9218-868e-45c4-9c81-cc34974eb270, total processing time - 112.96 seconds, summary 
+2025-11-09 02:22:31,768 [95mPERF[0m POST /generate_vlm_captions execution time = 113.003 sec
+2025-11-09 02:35:29,551 [94mINFO[0m Initializing VIA Stream Handler
+2025-11-09 02:35:29,553 [94mINFO[0m {'gdino_engine': '/root/.via/ngc_model_cache//cv_pipeline_models/swin.fp16.engine', 'tracker_config': '/tmp/via_tracker_config.yml', 'inference_interval': 1}
+2025-11-09 02:35:29,553 [94mINFO[0m Initializing VLM pipeline
+2025-11-09 02:35:29,841 [94mINFO[0m Have peer access: True
+2025-11-09 02:35:29,842 [94mINFO[0m Using model cached at /root/.via/ngc_model_cache/nvidia_tao_nvila-highres_nvila-lite-15b-highres-lita
+2025-11-09 02:35:29,843 [94mINFO[0m GPUs per VLM instance: 1
+2025-11-09 02:35:29,843 [94mINFO[0m num_vlm_procs set to 2
+2025-11-09 02:35:31,936 [94mINFO[0m Initializing VlmProcess-0
+2025-11-09 02:35:31,941 [94mINFO[0m Initializing DecoderProcess-1
+2025-11-09 02:35:31,943 [94mINFO[0m Initializing DecoderProcess-0
+2025-11-09 02:35:31,975 [94mINFO[0m Initializing VlmProcess-1
+2025-11-09 02:35:33,172 [94mINFO[0m Warmup DecoderProcess-0
+2025-11-09 02:35:33,202 [94mINFO[0m Warmup DecoderProcess-1
+2025-11-09 02:35:33,455 [94mINFO[0m Video stream found.
+2025-11-09 02:35:33,482 [94mINFO[0m Video stream found.
+2025-11-09 02:35:33,728 [95mPERF[0m Decode  execution time = 534.556 millisec
+2025-11-09 02:35:33,740 [95mPERF[0m Decode  execution time = 515.416 millisec
+2025-11-09 02:35:33,860 [94mINFO[0m Video stream found.
+2025-11-09 02:35:33,873 [94mINFO[0m Video stream found.
+2025-11-09 02:35:34,018 [95mPERF[0m Decode  execution time = 273.592 millisec
+2025-11-09 02:35:34,029 [95mPERF[0m Decode  execution time = 267.985 millisec
+2025-11-09 02:35:34,140 [94mINFO[0m Video stream found.
+2025-11-09 02:35:34,152 [94mINFO[0m Video stream found.
+2025-11-09 02:35:34,298 [95mPERF[0m Decode  execution time = 267.956 millisec
+2025-11-09 02:35:34,310 [95mPERF[0m Decode  execution time = 268.956 millisec
+2025-11-09 02:35:34,424 [94mINFO[0m Video stream found.
+2025-11-09 02:35:34,431 [94mINFO[0m Video stream found.
+2025-11-09 02:35:34,581 [95mPERF[0m Decode  execution time = 272.673 millisec
+2025-11-09 02:35:34,588 [95mPERF[0m Decode  execution time = 267.849 millisec
+2025-11-09 02:35:34,714 [94mINFO[0m Video stream found.
+2025-11-09 02:35:34,732 [94mINFO[0m Video stream found.
+2025-11-09 02:35:34,787 [95mPERF[0m Decode  execution time = 185.184 millisec
+2025-11-09 02:35:34,808 [95mPERF[0m Decode  execution time = 188.816 millisec
+2025-11-09 02:35:34,947 [94mINFO[0m Video stream found.
+2025-11-09 02:35:34,962 [94mINFO[0m Video stream found.
+2025-11-09 02:35:35,022 [95mPERF[0m Decode  execution time = 198.201 millisec
+2025-11-09 02:35:35,035 [95mPERF[0m Decode  execution time = 192.441 millisec
+2025-11-09 02:35:35,181 [94mINFO[0m Video stream found.
+2025-11-09 02:35:35,195 [94mINFO[0m Video stream found.
+2025-11-09 02:35:35,264 [95mPERF[0m Decode  execution time = 205.088 millisec
+2025-11-09 02:35:35,288 [95mPERF[0m Decode  execution time = 215.977 millisec
+2025-11-09 02:35:35,421 [94mINFO[0m Video stream found.
+2025-11-09 02:35:35,442 [94mINFO[0m Video stream found.
+2025-11-09 02:35:35,497 [95mPERF[0m Decode  execution time = 199.003 millisec
+2025-11-09 02:35:35,500 [94mINFO[0m Warmup DecoderProcess-0 done
+2025-11-09 02:35:35,501 [94mINFO[0m Initialized DecoderProcess-0
+2025-11-09 02:35:35,518 [95mPERF[0m Decode  execution time = 194.466 millisec
+2025-11-09 02:35:35,521 [94mINFO[0m Warmup DecoderProcess-1 done
+2025-11-09 02:35:35,522 [94mINFO[0m Initialized DecoderProcess-1
+2025-11-09 02:36:49,226 [95mPERF[0m VILA TRT model load execution time = 77.248 sec
+2025-11-09 02:36:49,226 [94mINFO[0m Warmup VlmProcess-1
+2025-11-09 02:36:49,974 [95mPERF[0m TRT generate execution time = 427.606 millisec
+2025-11-09 02:36:49,975 [94mINFO[0m Warmup VlmProcess-1 done
+2025-11-09 02:36:49,975 [94mINFO[0m Initialized VlmProcess-1
+2025-11-09 02:36:49,986 [94mSTATUS[0m Skipping VLM response generation for (Chunk 0: start=0.0 end=5.0 file=/opt/nvidia/via/warmup_streams/its_265.mp4)
+2025-11-09 02:36:49,990 [94mSTATUS[0m Skipping VLM response generation for (Chunk 0: start=0.0 end=5.0 file=/opt/nvidia/via/warmup_streams/its_265.mp4)
+2025-11-09 02:37:57,991 [95mPERF[0m VILA TRT model load execution time = 146.052 sec
+2025-11-09 02:37:57,992 [94mINFO[0m Warmup VlmProcess-0
+2025-11-09 02:37:58,775 [95mPERF[0m TRT generate execution time = 420.544 millisec
+2025-11-09 02:37:58,775 [94mINFO[0m Warmup VlmProcess-0 done
+2025-11-09 02:37:58,775 [94mINFO[0m Initialized VlmProcess-0
+2025-11-09 02:37:58,778 [94mINFO[0m Initialized VLM pipeline
+2025-11-09 02:37:58,778 [94mINFO[0m Initialized VIA Stream Handler
+2025-11-09 02:37:58,793 [95mPERF[0m GET /health/ready execution time = 511.885 usec
+2025-11-09 02:38:04,461 [94mINFO[0m Received add video file request - purpose Purpose.VISION, media_type MediaType.VIDEO have file UploadFile(filename='video_11.mp4', size=348364, headers=Headers({'content-disposition': 'form-data; name="file"; filename="video_11.mp4"'})), filename - , camera_id - default
+2025-11-09 02:38:04,496 [94mINFO[0m [AssetManager] Saved file - asset-id: 1590d56e-6f86-4112-a0ff-6055ab154f1f name: video_11.mp4
+2025-11-09 02:38:04,511 [95mPERF[0m POST /files execution time = 54.857 millisec
+2025-11-09 02:38:16,042 [94mINFO[0m Received generate_vlm_captions query, id - 1590d56e-6f86-4112-a0ff-6055ab154f1f (live-stream=0), chunk_duration=2, chunk_overlap_duration=0, media-offset-type=None, media-start-time=None, media-end-time=None, modelParams={"max_tokens": null, "temperature": null, "top_p": null, "top_k": null}, stream=False num_frames_per_chunk=0 vlm_input_width = 0, vlm_input_height = 0, cv_pipeline_prompt = , enable_cv_metadata = 0, enable_reasoning = 0
+2025-11-09 02:38:16,058 [94mINFO[0m Triggering oldest queued query 38c28240-56ac-46f6-b064-73a62ce956e2
+2025-11-09 02:38:16,071 [95mPERF[0m File Split execution time = 7.760 millisec
+2025-11-09 02:38:16,072 [94mINFO[0m Created video file query 38c28240-56ac-46f6-b064-73a62ce956e2 for videoId 1590d56e-6f86-4112-a0ff-6055ab154f1f
+2025-11-09 02:38:16,072 [94mINFO[0m Waiting for results of query 38c28240-56ac-46f6-b064-73a62ce956e2
+2025-11-09 02:38:16,072 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 0.00, size of response list is 0
+2025-11-09 02:38:16,072 [94mSTATUS[0m Chunk (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decode starting
+2025-11-09 02:38:16,072 [94mSTATUS[0m Chunk (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decode starting
+2025-11-09 02:38:16,073 [94mSTATUS[0m Chunk (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decode starting
+2025-11-09 02:38:16,073 [94mSTATUS[0m Chunk (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decode starting
+2025-11-09 02:38:16,074 [94mSTATUS[0m Chunk (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decode starting
+2025-11-09 02:38:16,074 [94mSTATUS[0m Chunk (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decode starting
+2025-11-09 02:38:16,075 [94mSTATUS[0m Chunk (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decode starting
+2025-11-09 02:38:16,075 [94mSTATUS[0m Chunk (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decode starting
+2025-11-09 02:38:16,316 [94mINFO[0m Video stream found.
+2025-11-09 02:38:16,378 [94mINFO[0m Video stream found.
+2025-11-09 02:38:16,420 [94mINFO[0m Video stream found.
+2025-11-09 02:38:16,425 [94mINFO[0m Video stream found.
+2025-11-09 02:38:16,431 [95mPERF[0m Decode  execution time = 233.273 millisec
+2025-11-09 02:38:16,439 [94mSTATUS[0m Chunk (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decoded, frames=16
+2025-11-09 02:38:16,443 [94mSTATUS[0m Chunk (Chunk 8: start=16.0 end=18.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decode starting
+2025-11-09 02:38:16,449 [94mSTATUS[0m Generating VLM response for (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4)
+2025-11-09 02:38:16,452 [95mPERF[0m Decode  execution time = 6.072 millisec
+2025-11-09 02:38:16,453 [94mINFO[0m Video stream found.
+2025-11-09 02:38:16,456 [93mWARNING[0m No frames found for chunk Chunk 8: start=16.0 end=18.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4
+2025-11-09 02:38:16,457 [94mSTATUS[0m Chunk (Chunk 8: start=16.0 end=18.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decoded, frames=0
+2025-11-09 02:38:16,458 [94mINFO[0m Processed chunk for query 38c28240-56ac-46f6-b064-73a62ce956e2, total chunks 10, processed chunks 1, chunk Chunk 8: start=16.0 end=18.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4,
+2025-11-09 02:38:16,464 [94mSTATUS[0m Chunk (Chunk 9: start=18.0 end=19.833 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decode starting
+2025-11-09 02:38:16,481 [95mPERF[0m Decode  execution time = 14.107 millisec
+2025-11-09 02:38:16,482 [93mWARNING[0m No frames found for chunk Chunk 9: start=18.0 end=19.833 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4
+2025-11-09 02:38:16,483 [94mSTATUS[0m Chunk (Chunk 9: start=18.0 end=19.833 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decoded, frames=0
+2025-11-09 02:38:16,483 [94mINFO[0m Processed chunk for query 38c28240-56ac-46f6-b064-73a62ce956e2, total chunks 10, processed chunks 2, chunk Chunk 9: start=18.0 end=19.833 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4,
+2025-11-09 02:38:16,501 [95mPERF[0m Decode  execution time = 304.097 millisec
+2025-11-09 02:38:16,512 [94mINFO[0m Video stream found.
+2025-11-09 02:38:16,512 [94mSTATUS[0m Chunk (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decoded, frames=16
+2025-11-09 02:38:16,514 [94mINFO[0m Video stream found.
+2025-11-09 02:38:16,520 [94mSTATUS[0m Generating VLM response for (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4)
+2025-11-09 02:38:16,527 [95mPERF[0m Decode  execution time = 360.050 millisec
+2025-11-09 02:38:16,529 [95mPERF[0m Decode  execution time = 330.477 millisec
+2025-11-09 02:38:16,531 [94mSTATUS[0m Chunk (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decoded, frames=16
+2025-11-09 02:38:16,532 [94mSTATUS[0m Chunk (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decoded, frames=16
+2025-11-09 02:38:16,732 [94mSTATUS[0m Generating VLM response for (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4)
+2025-11-09 02:38:17,072 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:18,073 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:19,073 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:19,656 [94mSTATUS[0m Generating VLM response for (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4)
+2025-11-09 02:38:20,073 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:21,074 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:22,074 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:23,075 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:24,075 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:25,075 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:26,076 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:27,076 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:38:27,710 [95mPERF[0m TRT generate execution time = 8.055 sec
+2025-11-09 02:38:27,713 [94mSTATUS[0m VLM response generated for (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4), [
+  {
+    "datetime": "00:00:33",
+    "objects": [2, 43]
+  },
+  {
+    "datetime": "00:00:34",
+    "objects": [3, 4]
+  }
+]
+2025-11-09 02:38:27,714 [94mINFO[0m Processed chunk for query 38c28240-56ac-46f6-b064-73a62ce956e2, total chunks 10, processed chunks 3, chunk Chunk 4: start=8.0 end=10.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4,
+2025-11-09 02:38:28,076 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:38:29,077 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:38:29,685 [95mPERF[0m TRT generate execution time = 12.954 sec
+2025-11-09 02:38:29,686 [94mSTATUS[0m VLM response generated for (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4), [
+  {
+    "datetime": "00:00:26",
+    "objects": [1, 2, 4]
+  },
+  {
+    "datetime": "00:00:27",
+    "objects": [1, 2, 4]
+  },
+  {
+    "datetime": "00:00:28",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:38:29,687 [94mINFO[0m Processed chunk for query 38c28240-56ac-46f6-b064-73a62ce956e2, total chunks 10, processed chunks 4, chunk Chunk 0: start=0.0 end=2.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4,
+2025-11-09 02:38:30,077 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:38:31,078 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:38:32,078 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:38:33,078 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:38:34,007 [95mPERF[0m Decode  execution time = 17.818 sec
+2025-11-09 02:38:34,012 [94mSTATUS[0m Chunk (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decoded, frames=16
+2025-11-09 02:38:34,022 [94mSTATUS[0m Generating VLM response for (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4)
+2025-11-09 02:38:34,069 [94mINFO[0m Video stream found.
+2025-11-09 02:38:34,079 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:38:34,182 [95mPERF[0m Decode  execution time = 18.046 sec
+2025-11-09 02:38:34,194 [94mSTATUS[0m Chunk (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decoded, frames=16
+2025-11-09 02:38:34,205 [94mSTATUS[0m Generating VLM response for (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4)
+2025-11-09 02:38:34,503 [95mPERF[0m Decode  execution time = 18.313 sec
+2025-11-09 02:38:34,503 [95mPERF[0m Decode  execution time = 18.063 sec
+2025-11-09 02:38:34,506 [94mSTATUS[0m Chunk (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decoded, frames=16
+2025-11-09 02:38:34,507 [94mSTATUS[0m Chunk (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4) decoded, frames=16
+2025-11-09 02:38:34,912 [94mSTATUS[0m Generating VLM response for (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4)
+2025-11-09 02:38:35,079 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:38:36,079 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:38:37,080 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:38:38,080 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:38:39,081 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:38:39,496 [95mPERF[0m TRT generate execution time = 4.585 sec
+2025-11-09 02:38:39,499 [94mSTATUS[0m VLM response generated for (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4), []
+2025-11-09 02:38:39,502 [95mPERF[0m TRT generate execution time = 5.381 sec
+2025-11-09 02:38:39,503 [94mSTATUS[0m VLM response generated for (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:38:39,504 [94mINFO[0m Processed chunk for query 38c28240-56ac-46f6-b064-73a62ce956e2, total chunks 10, processed chunks 5, chunk Chunk 5: start=10.0 end=12.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4,
+2025-11-09 02:38:40,081 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:38:41,081 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:38:42,081 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:38:43,082 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:38:43,836 [94mSTATUS[0m Generating VLM response for (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4)
+2025-11-09 02:38:43,836 [94mINFO[0m Processed chunk for query 38c28240-56ac-46f6-b064-73a62ce956e2, total chunks 10, processed chunks 6, chunk Chunk 6: start=12.0 end=14.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4,
+2025-11-09 02:38:44,082 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:38:45,083 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:38:46,083 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:38:47,083 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:38:47,241 [95mPERF[0m TRT generate execution time = 7.742 sec
+2025-11-09 02:38:47,242 [94mSTATUS[0m VLM response generated for (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4), [
+  {
+    "datetime": "00:00:38",
+    "objects": [1, 4]
+  },
+  {
+    "datetime": "00:00:39",
+    "objects": [1, 4]
+  },
+  {
+    "datetime": "00:00:40",
+    "objects": [1, 4]
+  }
+]
+2025-11-09 02:38:47,243 [94mINFO[0m Processed chunk for query 38c28240-56ac-46f6-b064-73a62ce956e2, total chunks 10, processed chunks 7, chunk Chunk 7: start=14.0 end=16.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4,
+2025-11-09 02:38:48,084 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 63.00, size of response list is 0
+2025-11-09 02:38:49,084 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 63.00, size of response list is 0
+2025-11-09 02:38:50,085 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 63.00, size of response list is 0
+2025-11-09 02:38:51,085 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 63.00, size of response list is 0
+2025-11-09 02:38:52,085 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 63.00, size of response list is 0
+2025-11-09 02:38:53,086 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 63.00, size of response list is 0
+2025-11-09 02:38:54,086 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 63.00, size of response list is 0
+2025-11-09 02:38:54,304 [95mPERF[0m TRT generate execution time = 2.889 sec
+2025-11-09 02:38:54,305 [94mSTATUS[0m VLM response generated for (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4), [
+  {
+    "datetime": "00:00:31",
+    "objects": [1, 3]
+  },
+  {
+    "datetime": "00:00:32",
+    "objects": [2, 4]
+  }
+]
+2025-11-09 02:38:54,306 [94mINFO[0m Processed chunk for query 38c28240-56ac-46f6-b064-73a62ce956e2, total chunks 10, processed chunks 8, chunk Chunk 3: start=6.0 end=8.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4,
+2025-11-09 02:38:54,429 [95mPERF[0m TRT generate execution time = 2.978 sec
+2025-11-09 02:38:54,430 [94mSTATUS[0m VLM response generated for (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:38:54,431 [94mINFO[0m Processed chunk for query 38c28240-56ac-46f6-b064-73a62ce956e2, total chunks 10, processed chunks 9, chunk Chunk 1: start=2.0 end=4.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4,
+2025-11-09 02:38:55,086 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:38:56,087 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:38:57,087 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:38:58,087 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:38:59,088 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:39:00,088 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:39:01,089 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:39:02,089 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:39:03,089 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:39:04,090 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:39:05,090 [94mINFO[0m Status for query 38c28240-56ac-46f6-b064-73a62ce956e2 is processing, percent complete is 81.00, size of response list is 0
+2025-11-09 02:39:06,056 [95mPERF[0m TRT generate execution time = 41.962 sec
+2025-11-09 02:39:06,056 [94mSTATUS[0m VLM response generated for (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4), [
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1, 3]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:30",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  },
+  {
+    "datetime": "00:00:31",
+    "objects": [4, 2, 1]
+  }
+]
+2025-11-09 02:39:06,057 [94mINFO[0m Processed chunk for query 38c28240-56ac-46f6-b064-73a62ce956e2, total chunks 10, processed chunks 10, chunk Chunk 2: start=4.0 end=6.0 file=/tmp/assets/1590d56e-6f86-4112-a0ff-6055ab154f1f/video_11.mp4,
+2025-11-09 02:39:06,058 [94mINFO[0m Processed all chunks for query 38c28240-56ac-46f6-b064-73a62ce956e2, VLM pipeline time 50.00 sec
+2025-11-09 02:39:06,058 [94mINFO[0m Generating summary for request 38c28240-56ac-46f6-b064-73a62ce956e2
+2025-11-09 02:39:06,059 [95mPERF[0m Chunk Processing - Filter and Sort execution time = 245.571 usec
+2025-11-09 02:39:06,065 [94mINFO[0m Summary generated for video file request 38c28240-56ac-46f6-b064-73a62ce956e2, total processing time - 50.00 seconds, summary 
+2025-11-09 02:39:06,066 [95mPERF[0m POST /generate_vlm_captions execution time = 50.043 sec
+2025-11-09 02:48:38,491 [94mINFO[0m Initializing VIA Stream Handler
+2025-11-09 02:48:38,493 [94mINFO[0m {'gdino_engine': '/root/.via/ngc_model_cache//cv_pipeline_models/swin.fp16.engine', 'tracker_config': '/tmp/via_tracker_config.yml', 'inference_interval': 1}
+2025-11-09 02:48:38,493 [94mINFO[0m Initializing VLM pipeline
+2025-11-09 02:48:38,787 [94mINFO[0m Have peer access: True
+2025-11-09 02:48:38,789 [94mINFO[0m Using model cached at /root/.via/ngc_model_cache/nvidia_tao_nvila-highres_nvila-lite-15b-highres-lita
+2025-11-09 02:48:38,790 [94mINFO[0m GPUs per VLM instance: 1
+2025-11-09 02:48:38,790 [94mINFO[0m num_vlm_procs set to 2
+2025-11-09 02:48:40,876 [94mINFO[0m Initializing DecoderProcess-0
+2025-11-09 02:48:40,913 [94mINFO[0m Initializing DecoderProcess-1
+2025-11-09 02:48:40,915 [94mINFO[0m Initializing VlmProcess-0
+2025-11-09 02:48:40,923 [94mINFO[0m Initializing VlmProcess-1
+2025-11-09 02:48:42,165 [94mINFO[0m Warmup DecoderProcess-1
+2025-11-09 02:48:42,165 [94mINFO[0m Warmup DecoderProcess-0
+2025-11-09 02:48:42,459 [94mINFO[0m Video stream found.
+2025-11-09 02:48:42,459 [94mINFO[0m Video stream found.
+2025-11-09 02:48:42,710 [95mPERF[0m Decode  execution time = 522.637 millisec
+2025-11-09 02:48:42,712 [95mPERF[0m Decode  execution time = 524.755 millisec
+2025-11-09 02:48:42,833 [94mINFO[0m Video stream found.
+2025-11-09 02:48:42,848 [94mINFO[0m Video stream found.
+2025-11-09 02:48:42,990 [95mPERF[0m Decode  execution time = 267.718 millisec
+2025-11-09 02:48:43,004 [95mPERF[0m Decode  execution time = 272.616 millisec
+2025-11-09 02:48:43,120 [94mINFO[0m Video stream found.
+2025-11-09 02:48:43,127 [94mINFO[0m Video stream found.
+2025-11-09 02:48:43,278 [95mPERF[0m Decode  execution time = 277.190 millisec
+2025-11-09 02:48:43,284 [95mPERF[0m Decode  execution time = 268.757 millisec
+2025-11-09 02:48:43,401 [94mINFO[0m Video stream found.
+2025-11-09 02:48:43,405 [94mINFO[0m Video stream found.
+2025-11-09 02:48:43,557 [95mPERF[0m Decode  execution time = 271.644 millisec
+2025-11-09 02:48:43,563 [95mPERF[0m Decode  execution time = 268.403 millisec
+2025-11-09 02:48:43,710 [94mINFO[0m Video stream found.
+2025-11-09 02:48:43,714 [94mINFO[0m Video stream found.
+2025-11-09 02:48:43,784 [95mPERF[0m Decode  execution time = 186.164 millisec
+2025-11-09 02:48:43,790 [95mPERF[0m Decode  execution time = 192.946 millisec
+2025-11-09 02:48:43,946 [94mINFO[0m Video stream found.
+2025-11-09 02:48:43,957 [94mINFO[0m Video stream found.
+2025-11-09 02:48:44,021 [95mPERF[0m Decode  execution time = 197.742 millisec
+2025-11-09 02:48:44,034 [95mPERF[0m Decode  execution time = 202.541 millisec
+2025-11-09 02:48:44,166 [94mINFO[0m Video stream found.
+2025-11-09 02:48:44,193 [94mINFO[0m Video stream found.
+2025-11-09 02:48:44,260 [95mPERF[0m Decode  execution time = 211.662 millisec
+2025-11-09 02:48:44,284 [95mPERF[0m Decode  execution time = 215.270 millisec
+2025-11-09 02:48:44,421 [94mINFO[0m Video stream found.
+2025-11-09 02:48:44,445 [94mINFO[0m Video stream found.
+2025-11-09 02:48:44,497 [95mPERF[0m Decode  execution time = 202.054 millisec
+2025-11-09 02:48:44,501 [94mINFO[0m Warmup DecoderProcess-1 done
+2025-11-09 02:48:44,502 [94mINFO[0m Initialized DecoderProcess-1
+2025-11-09 02:48:44,521 [95mPERF[0m Decode  execution time = 198.918 millisec
+2025-11-09 02:48:44,524 [94mINFO[0m Warmup DecoderProcess-0 done
+2025-11-09 02:48:44,526 [94mINFO[0m Initialized DecoderProcess-0
+2025-11-09 02:49:58,360 [95mPERF[0m VILA TRT model load execution time = 77.434 sec
+2025-11-09 02:49:58,360 [94mINFO[0m Warmup VlmProcess-1
+2025-11-09 02:49:59,154 [95mPERF[0m TRT generate execution time = 423.793 millisec
+2025-11-09 02:49:59,155 [94mINFO[0m Warmup VlmProcess-1 done
+2025-11-09 02:49:59,155 [94mINFO[0m Initialized VlmProcess-1
+2025-11-09 02:49:59,159 [94mSTATUS[0m Skipping VLM response generation for (Chunk 0: start=0.0 end=5.0 file=/opt/nvidia/via/warmup_streams/its_265.mp4)
+2025-11-09 02:49:59,167 [94mSTATUS[0m Skipping VLM response generation for (Chunk 0: start=0.0 end=5.0 file=/opt/nvidia/via/warmup_streams/its_265.mp4)
+2025-11-09 02:51:07,538 [95mPERF[0m VILA TRT model load execution time = 146.620 sec
+2025-11-09 02:51:07,539 [94mINFO[0m Warmup VlmProcess-0
+2025-11-09 02:51:08,331 [95mPERF[0m TRT generate execution time = 427.234 millisec
+2025-11-09 02:51:08,331 [94mINFO[0m Warmup VlmProcess-0 done
+2025-11-09 02:51:08,332 [94mINFO[0m Initialized VlmProcess-0
+2025-11-09 02:51:08,335 [94mINFO[0m Initialized VLM pipeline
+2025-11-09 02:51:08,335 [94mINFO[0m Initialized VIA Stream Handler
+2025-11-09 02:51:08,347 [95mPERF[0m GET /health/ready execution time = 373.840 usec
+2025-11-09 02:53:15,571 [94mINFO[0m Received add video file request - purpose Purpose.VISION, media_type MediaType.VIDEO have file UploadFile(filename='video_11.mp4', size=348364, headers=Headers({'content-disposition': 'form-data; name="file"; filename="video_11.mp4"'})), filename - , camera_id - default
+2025-11-09 02:53:15,606 [94mINFO[0m [AssetManager] Saved file - asset-id: c512a127-9620-456d-9e84-9ac1e25016c8 name: video_11.mp4
+2025-11-09 02:53:15,626 [95mPERF[0m POST /files execution time = 59.323 millisec
+2025-11-09 02:53:32,963 [94mINFO[0m Received generate_vlm_captions query, id - c512a127-9620-456d-9e84-9ac1e25016c8 (live-stream=0), chunk_duration=2, chunk_overlap_duration=0, media-offset-type=None, media-start-time=None, media-end-time=None, modelParams={"max_tokens": null, "temperature": null, "top_p": null, "top_k": null}, stream=False num_frames_per_chunk=0 vlm_input_width = 0, vlm_input_height = 0, cv_pipeline_prompt = , enable_cv_metadata = 0, enable_reasoning = 0
+2025-11-09 02:53:32,976 [94mINFO[0m Triggering oldest queued query 66094488-5109-47f6-bfd9-9a34bd095562
+2025-11-09 02:53:32,985 [95mPERF[0m File Split execution time = 5.849 millisec
+2025-11-09 02:53:32,986 [94mINFO[0m Created video file query 66094488-5109-47f6-bfd9-9a34bd095562 for videoId c512a127-9620-456d-9e84-9ac1e25016c8
+2025-11-09 02:53:32,986 [94mINFO[0m Waiting for results of query 66094488-5109-47f6-bfd9-9a34bd095562
+2025-11-09 02:53:32,986 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 0.00, size of response list is 0
+2025-11-09 02:53:32,993 [94mSTATUS[0m Chunk (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decode starting
+2025-11-09 02:53:32,993 [94mSTATUS[0m Chunk (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decode starting
+2025-11-09 02:53:32,994 [94mSTATUS[0m Chunk (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decode starting
+2025-11-09 02:53:32,994 [94mSTATUS[0m Chunk (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decode starting
+2025-11-09 02:53:32,994 [94mSTATUS[0m Chunk (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decode starting
+2025-11-09 02:53:32,995 [94mSTATUS[0m Chunk (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decode starting
+2025-11-09 02:53:32,995 [94mSTATUS[0m Chunk (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decode starting
+2025-11-09 02:53:32,996 [94mSTATUS[0m Chunk (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decode starting
+2025-11-09 02:53:33,296 [94mINFO[0m Video stream found.
+2025-11-09 02:53:33,302 [94mINFO[0m Video stream found.
+2025-11-09 02:53:33,304 [94mINFO[0m Video stream found.
+2025-11-09 02:53:33,349 [94mINFO[0m Video stream found.
+2025-11-09 02:53:33,355 [94mINFO[0m Video stream found.
+2025-11-09 02:53:33,361 [94mINFO[0m Video stream found.
+2025-11-09 02:53:33,362 [95mPERF[0m Decode  execution time = 272.837 millisec
+2025-11-09 02:53:33,365 [94mINFO[0m Video stream found.
+2025-11-09 02:53:33,367 [94mSTATUS[0m Chunk (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decoded, frames=16
+2025-11-09 02:53:33,369 [94mSTATUS[0m Chunk (Chunk 8: start=16.0 end=18.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decode starting
+2025-11-09 02:53:33,370 [94mINFO[0m Video stream found.
+2025-11-09 02:53:33,371 [95mPERF[0m Decode  execution time = 1.157 millisec
+2025-11-09 02:53:33,371 [93mWARNING[0m No frames found for chunk Chunk 8: start=16.0 end=18.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4
+2025-11-09 02:53:33,371 [94mSTATUS[0m Chunk (Chunk 8: start=16.0 end=18.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decoded, frames=0
+2025-11-09 02:53:33,372 [94mINFO[0m Processed chunk for query 66094488-5109-47f6-bfd9-9a34bd095562, total chunks 10, processed chunks 1, chunk Chunk 8: start=16.0 end=18.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4,
+2025-11-09 02:53:33,380 [94mSTATUS[0m Chunk (Chunk 9: start=18.0 end=19.833 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decode starting
+2025-11-09 02:53:33,380 [94mSTATUS[0m Generating VLM response for (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4)
+2025-11-09 02:53:33,403 [95mPERF[0m Decode  execution time = 21.640 millisec
+2025-11-09 02:53:33,405 [93mWARNING[0m No frames found for chunk Chunk 9: start=18.0 end=19.833 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4
+2025-11-09 02:53:33,405 [94mSTATUS[0m Chunk (Chunk 9: start=18.0 end=19.833 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decoded, frames=0
+2025-11-09 02:53:33,406 [94mINFO[0m Processed chunk for query 66094488-5109-47f6-bfd9-9a34bd095562, total chunks 10, processed chunks 2, chunk Chunk 9: start=18.0 end=19.833 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4,
+2025-11-09 02:53:33,449 [95mPERF[0m Decode  execution time = 346.114 millisec
+2025-11-09 02:53:33,458 [94mSTATUS[0m Chunk (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decoded, frames=16
+2025-11-09 02:53:33,468 [95mPERF[0m Decode  execution time = 325.098 millisec
+2025-11-09 02:53:33,476 [94mSTATUS[0m Chunk (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decoded, frames=16
+2025-11-09 02:53:33,480 [95mPERF[0m Decode  execution time = 236.922 millisec
+2025-11-09 02:53:33,484 [94mSTATUS[0m Chunk (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decoded, frames=16
+2025-11-09 02:53:33,986 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:34,987 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:35,987 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:36,987 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:37,988 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:38,988 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:39,248 [94mSTATUS[0m Generating VLM response for (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4)
+2025-11-09 02:53:39,989 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:40,989 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:41,271 [95mPERF[0m Decode  execution time = 8.188 sec
+2025-11-09 02:53:41,989 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:42,990 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:43,990 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:44,990 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:45,991 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:46,991 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:47,992 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:48,992 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:49,992 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:50,812 [94mSTATUS[0m Chunk (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decoded, frames=16
+2025-11-09 02:53:50,864 [95mPERF[0m Decode  execution time = 17.787 sec
+2025-11-09 02:53:50,869 [94mSTATUS[0m Chunk (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decoded, frames=16
+2025-11-09 02:53:50,879 [95mPERF[0m Decode  execution time = 17.725 sec
+2025-11-09 02:53:50,883 [94mSTATUS[0m Chunk (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decoded, frames=16
+2025-11-09 02:53:50,985 [94mSTATUS[0m Generating VLM response for (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4)
+2025-11-09 02:53:50,993 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:51,006 [94mSTATUS[0m Generating VLM response for (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4)
+2025-11-09 02:53:51,993 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:52,993 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:53,993 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:54,994 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:55,994 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:56,994 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:57,995 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:58,995 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:53:59,996 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:00,996 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:01,996 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:02,997 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:03,997 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:04,997 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:05,998 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:06,998 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:07,999 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:08,214 [94mSTATUS[0m Generating VLM response for (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4)
+2025-11-09 02:54:08,999 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:09,999 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:11,000 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:12,000 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:13,000 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:14,001 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:15,001 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:16,001 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:17,002 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:18,002 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:19,002 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:20,003 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:21,003 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:22,004 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:23,004 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:24,004 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:25,005 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:25,569 [94mSTATUS[0m Generating VLM response for (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4)
+2025-11-09 02:54:25,569 [95mPERF[0m Decode  execution time = 52.341 sec
+2025-11-09 02:54:25,572 [94mSTATUS[0m Chunk (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4) decoded, frames=16
+2025-11-09 02:54:26,005 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:26,026 [94mSTATUS[0m Generating VLM response for (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4)
+2025-11-09 02:54:26,108 [94mSTATUS[0m Generating VLM response for (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4)
+2025-11-09 02:54:27,005 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 18.00, size of response list is 0
+2025-11-09 02:54:27,840 [95mPERF[0m TRT generate execution time = 1.815 sec
+2025-11-09 02:54:27,842 [94mSTATUS[0m VLM response generated for (Chunk 5: start=10.0 end=12.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4), []
+2025-11-09 02:54:27,843 [94mINFO[0m Processed chunk for query 66094488-5109-47f6-bfd9-9a34bd095562, total chunks 10, processed chunks 3, chunk Chunk 5: start=10.0 end=12.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4,
+2025-11-09 02:54:28,006 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:54:29,006 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:54:30,007 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:54:31,007 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:54:32,007 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:54:33,008 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 27.00, size of response list is 0
+2025-11-09 02:54:33,581 [95mPERF[0m TRT generate execution time = 42.574 sec
+2025-11-09 02:54:33,582 [94mSTATUS[0m VLM response generated for (Chunk 3: start=6.0 end=8.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:54:33,583 [94mINFO[0m Processed chunk for query 66094488-5109-47f6-bfd9-9a34bd095562, total chunks 10, processed chunks 4, chunk Chunk 3: start=6.0 end=8.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4,
+2025-11-09 02:54:34,008 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:54:35,008 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:54:36,009 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:54:37,009 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:54:38,010 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:54:39,010 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 36.00, size of response list is 0
+2025-11-09 02:54:39,080 [95mPERF[0m TRT generate execution time = 13.512 sec
+2025-11-09 02:54:39,080 [94mSTATUS[0m VLM response generated for (Chunk 6: start=12.0 end=14.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:54:39,081 [94mINFO[0m Processed chunk for query 66094488-5109-47f6-bfd9-9a34bd095562, total chunks 10, processed chunks 5, chunk Chunk 6: start=12.0 end=14.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4,
+2025-11-09 02:54:40,010 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:54:41,011 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 45.00, size of response list is 0
+2025-11-09 02:54:41,598 [95mPERF[0m TRT generate execution time = 15.001 sec
+2025-11-09 02:54:41,598 [94mSTATUS[0m VLM response generated for (Chunk 0: start=0.0 end=2.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4), [
+  {
+    "datetime": "00:00:26",
+    "objects": [1, 2, 4]
+  },
+  {
+    "datetime": "00:00:27",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:54:41,599 [94mINFO[0m Processed chunk for query 66094488-5109-47f6-bfd9-9a34bd095562, total chunks 10, processed chunks 6, chunk Chunk 0: start=0.0 end=2.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4,
+2025-11-09 02:54:42,011 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:54:43,011 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:54:44,012 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:54:45,012 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:54:46,013 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:54:47,013 [94mINFO[0m Status for query 66094488-5109-47f6-bfd9-9a34bd095562 is processing, percent complete is 54.00, size of response list is 0
+2025-11-09 02:54:47,087 [95mPERF[0m TRT generate execution time = 20.980 sec
+2025-11-09 02:54:47,089 [94mSTATUS[0m VLM response generated for (Chunk 2: start=4.0 end=6.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:54:47,090 [94mINFO[0m Processed chunk for query 66094488-5109-47f6-bfd9-9a34bd095562, total chunks 10, processed chunks 7, chunk Chunk 2: start=4.0 end=6.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4,
+2025-11-09 02:54:47,134 [95mPERF[0m TRT generate execution time = 3.609 sec
+2025-11-09 02:54:47,135 [94mSTATUS[0m VLM response generated for (Chunk 7: start=14.0 end=16.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4), [
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [3, 5]
+  },
+  {
+    "datetime": "HH:MM:SS",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:54:47,135 [94mINFO[0m Processed chunk for query 66094488-5109-47f6-bfd9-9a34bd095562, total chunks 10, processed chunks 8, chunk Chunk 7: start=14.0 end=16.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4,
+2025-11-09 02:54:47,177 [95mPERF[0m TRT generate execution time = 55.554 sec
+2025-11-09 02:54:47,180 [95mPERF[0m TRT generate execution time = 56.195 sec
+2025-11-09 02:54:47,180 [94mSTATUS[0m VLM response generated for (Chunk 4: start=8.0 end=10.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4), [
+  {
+    "datetime": "00:00:33",
+    "objects": [2, 43]
+  },
+  {
+    "datetime": "00:00:34",
+    "objects": [3, 4]
+  }
+]
+2025-11-09 02:54:47,181 [94mSTATUS[0m VLM response generated for (Chunk 1: start=2.0 end=4.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4), [
+  {
+    "datetime": "00:00:28",
+    "objects": [2, 4]
+  },
+  {
+    "datetime": "00:00:29",
+    "objects": [1, 2, 4]
+  }
+]
+2025-11-09 02:54:47,181 [94mINFO[0m Processed chunk for query 66094488-5109-47f6-bfd9-9a34bd095562, total chunks 10, processed chunks 9, chunk Chunk 4: start=8.0 end=10.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4,
+2025-11-09 02:54:47,181 [94mINFO[0m Processed chunk for query 66094488-5109-47f6-bfd9-9a34bd095562, total chunks 10, processed chunks 10, chunk Chunk 1: start=2.0 end=4.0 file=/tmp/assets/c512a127-9620-456d-9e84-9ac1e25016c8/video_11.mp4,
+2025-11-09 02:54:47,182 [94mINFO[0m Processed all chunks for query 66094488-5109-47f6-bfd9-9a34bd095562, VLM pipeline time 74.21 sec
+2025-11-09 02:54:47,182 [94mINFO[0m Generating summary for request 66094488-5109-47f6-bfd9-9a34bd095562
+2025-11-09 02:54:47,182 [95mPERF[0m Chunk Processing - Filter and Sort execution time = 255.585 usec
+2025-11-09 02:54:47,189 [94mINFO[0m Summary generated for video file request 66094488-5109-47f6-bfd9-9a34bd095562, total processing time - 74.21 seconds, summary 
+2025-11-09 02:54:47,190 [95mPERF[0m POST /generate_vlm_captions execution time = 74.245 sec

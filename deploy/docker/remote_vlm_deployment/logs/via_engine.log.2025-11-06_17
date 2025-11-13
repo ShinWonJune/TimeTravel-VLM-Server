@@ -1,0 +1,48 @@
+2025-11-06 17:00:37,377 [94mINFO[0m Initializing VIA Stream Handler
+2025-11-06 17:00:37,379 [94mINFO[0m {'gdino_engine': '/root/.via/ngc_model_cache//cv_pipeline_models/swin.fp16.engine', 'tracker_config': '/tmp/via_tracker_config.yml', 'inference_interval': 1}
+2025-11-06 17:00:37,380 [94mINFO[0m Initializing VLM pipeline
+2025-11-06 17:00:37,386 [94mINFO[0m Have peer access: True
+2025-11-06 17:00:38,034 [93mWARNING[0m OPENAI_API_VERSION is not configured; May be required for certain model deployments;
+2025-11-06 17:00:38,034 [94mINFO[0m AZURE_OPENAI_API_VERSION is not configured; May be required for certain model deployments;
+2025-11-06 17:00:38,036 [94mINFO[0m OPENAI_API_KEY configured
+2025-11-06 17:00:38,036 [94mINFO[0m VIA_VLM_ENDPOINT is not configured; using OpenAI() default
+2025-11-06 17:00:38,064 [94mINFO[0m endpoint is https://api.openai.com/v1/
+2025-11-06 17:00:38,065 [94mINFO[0m num_vlm_procs set to 1
+2025-11-06 17:00:40,115 [94mINFO[0m Initializing DecoderProcess-0
+2025-11-06 17:00:40,126 [94mINFO[0m Initializing EmbeddingProcess-0
+2025-11-06 17:00:40,128 [94mINFO[0m Warmup EmbeddingProcess-0
+2025-11-06 17:00:40,128 [94mINFO[0m Warmup EmbeddingProcess-0 done
+2025-11-06 17:00:40,128 [94mINFO[0m Initialized EmbeddingProcess-0
+2025-11-06 17:00:40,136 [94mINFO[0m Initializing VlmProcess-0
+2025-11-06 17:00:40,756 [93mWARNING[0m OPENAI_API_VERSION is not configured; May be required for certain model deployments;
+2025-11-06 17:00:40,756 [94mINFO[0m AZURE_OPENAI_API_VERSION is not configured; May be required for certain model deployments;
+2025-11-06 17:00:40,757 [94mINFO[0m OPENAI_API_KEY configured
+2025-11-06 17:00:40,757 [94mINFO[0m VIA_VLM_ENDPOINT is configured to https://api.openai.com/v1/
+2025-11-06 17:00:40,757 [94mINFO[0m VIA_VLM_API_KEY is not configured; will try use OPENAI_API_KEY
+2025-11-06 17:00:40,786 [94mINFO[0m endpoint is https://api.openai.com/v1/
+2025-11-06 17:00:42,264 [94mINFO[0m Warmup DecoderProcess-0
+2025-11-06 17:00:42,637 [94mINFO[0m Video stream found.
+2025-11-06 17:00:42,999 [95mPERF[0m Decode  execution time = 711.839 millisec
+2025-11-06 17:00:43,120 [94mINFO[0m Video stream found.
+2025-11-06 17:00:43,380 [95mPERF[0m Decode  execution time = 370.760 millisec
+2025-11-06 17:00:43,500 [94mINFO[0m Video stream found.
+2025-11-06 17:00:43,761 [95mPERF[0m Decode  execution time = 371.621 millisec
+2025-11-06 17:00:43,882 [94mINFO[0m Video stream found.
+2025-11-06 17:00:44,154 [95mPERF[0m Decode  execution time = 383.633 millisec
+2025-11-06 17:00:44,302 [94mINFO[0m Video stream found.
+2025-11-06 17:00:44,495 [95mPERF[0m Decode  execution time = 310.540 millisec
+2025-11-06 17:00:44,652 [94mINFO[0m Video stream found.
+2025-11-06 17:00:44,845 [95mPERF[0m Decode  execution time = 316.701 millisec
+2025-11-06 17:00:45,000 [94mINFO[0m Video stream found.
+2025-11-06 17:00:45,204 [95mPERF[0m Decode  execution time = 327.025 millisec
+2025-11-06 17:00:45,361 [94mINFO[0m Video stream found.
+2025-11-06 17:00:45,564 [95mPERF[0m Decode  execution time = 326.655 millisec
+2025-11-06 17:00:45,567 [94mINFO[0m Warmup DecoderProcess-0 done
+2025-11-06 17:00:45,579 [94mINFO[0m Initialized DecoderProcess-0
+2025-11-06 17:00:50,393 [95mPERF[0m OpenAI model inference execution time = 9.605 sec
+2025-11-06 17:00:50,393 [94mINFO[0m Warmup VlmProcess-0
+2025-11-06 17:00:50,393 [94mINFO[0m Warmup VlmProcess-0 done
+2025-11-06 17:00:50,393 [94mINFO[0m Initialized VlmProcess-0
+2025-11-06 17:00:50,394 [94mINFO[0m Initialized VLM pipeline
+2025-11-06 17:00:50,394 [94mINFO[0m Initialized VIA Stream Handler
+2025-11-06 17:00:50,403 [95mPERF[0m GET /health/ready execution time = 356.913 usec

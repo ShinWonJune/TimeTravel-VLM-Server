@@ -484,6 +484,7 @@ class VideoFileFrameGetter:
         self._audio_frames_lock = threading.Lock()
         self._audio_present = False
         self._eos_sent = False
+        self._nvv4l2decoder = None  # Reference to hardware decoder (stored in cb_elem_added)
         self._end_pts = None
         self._start_pts = None
         self._chunk_duration = None
@@ -1020,6 +1021,8 @@ class VideoFileFrameGetter:
                 elem.set_property("gpu-id", self._gpu_id)
                 elem.set_property("extract-sei-type5-data", True)
                 elem.set_property("sei-uuid", "NVDS_CUSTOMMETA")
+                # Store reference to the actual hardware decoder for state debugging
+                selff._nvv4l2decoder = elem
             if "mpeg4videoparse" in elem.get_factory().get_name():
                 elem.set_property("config-interval", -1)
             if "rtspsrc" == elem.get_factory().get_name():
@@ -3404,14 +3407,89 @@ class VideoFileFrameGetter:
                 (chunk.end_pts - chunk.start_pts) / 1e9,
             )
 
+            # DEBUG: Check decoder state BEFORE READY reset
+            logger.info("DEBUG [Chunk %d]: ===== BEFORE READY RESET =====", chunk.chunkIdx)
+            
+            # Use stored reference to nvv4l2decoder (set in cb_elem_added callback)
+            if self._nvv4l2decoder is not None:
+                decoder = self._nvv4l2decoder
+                try:
+                    decoder_name = decoder.get_factory().get_name()
+                    state, pending, _ = decoder.get_state(0)
+                    logger.info(
+                        "DEBUG [Chunk %d]: %s - state=%s, pending=%s",
+                        chunk.chunkIdx, decoder_name, state, pending
+                    )
+                    # Try to query position
+                    success, pos = decoder.query_position(Gst.Format.TIME)
+                    if success and pos != Gst.CLOCK_TIME_NONE:
+                        logger.info(
+                            "DEBUG [Chunk %d]: %s - position=%.2fs",
+                            chunk.chunkIdx, decoder_name, pos / 1e9
+                        )
+                    else:
+                        logger.info(
+                            "DEBUG [Chunk %d]: %s - position query failed or NONE",
+                            chunk.chunkIdx, decoder_name
+                        )
+                except Exception as e:
+                    logger.info(
+                        "DEBUG [Chunk %d]: Error querying decoder state: %s",
+                        chunk.chunkIdx, str(e)
+                    )
+            else:
+                logger.info("DEBUG [Chunk %d]: nvv4l2decoder reference not available", chunk.chunkIdx)
+
             # BUGFIX: Reset pipeline state to ensure clean seek
             # When reusing pipeline, need to reset to READY then back to PAUSED
             # to ensure decoder state is cleared for proper backward seeking
-            pipeline.set_state(Gst.State.READY)
-            pipeline.get_state(Gst.CLOCK_TIME_NONE)
             
-            pipeline.set_state(Gst.State.PAUSED)
-            pipeline.get_state(Gst.CLOCK_TIME_NONE)
+            # EXPERIMENT: Test without READY reset for Chunk 4 only to see actual failure
+            skip_reset = (chunk.chunkIdx == 4) and os.environ.get("SKIP_READY_RESET") == "1"
+            
+            if skip_reset:
+                logger.info("DEBUG [Chunk %d]: ⚠️ SKIPPING READY RESET (EXPERIMENT)", chunk.chunkIdx)
+            else:
+                pipeline.set_state(Gst.State.READY)
+                pipeline.get_state(Gst.CLOCK_TIME_NONE)
+            
+            # DEBUG: Check decoder state AFTER READY reset (or after skipping it)
+            if skip_reset:
+                logger.info("DEBUG [Chunk %d]: ===== NO RESET - DECODER STATE UNCHANGED =====", chunk.chunkIdx)
+            else:
+                logger.info("DEBUG [Chunk %d]: ===== AFTER READY RESET =====", chunk.chunkIdx)
+            
+            # Use stored reference to check decoder state after reset
+            if self._nvv4l2decoder is not None and not skip_reset:
+                decoder = self._nvv4l2decoder
+                try:
+                    decoder_name = decoder.get_factory().get_name()
+                    state, pending, _ = decoder.get_state(0)
+                    logger.info(
+                        "DEBUG [Chunk %d]: %s - state=%s (after reset), pending=%s",
+                        chunk.chunkIdx, decoder_name, state, pending
+                    )
+                    # Try to query position after reset
+                    success, pos = decoder.query_position(Gst.Format.TIME)
+                    if success and pos != Gst.CLOCK_TIME_NONE:
+                        logger.info(
+                            "DEBUG [Chunk %d]: %s - position=%.2fs (after reset)",
+                            chunk.chunkIdx, decoder_name, pos / 1e9
+                        )
+                    else:
+                        logger.info(
+                            "DEBUG [Chunk %d]: %s - position reset to NONE or query failed",
+                            chunk.chunkIdx, decoder_name
+                        )
+                except Exception as e:
+                    logger.info(
+                        "DEBUG [Chunk %d]: Error querying decoder state after reset: %s",
+                        chunk.chunkIdx, str(e)
+                    )
+            
+            if not skip_reset:
+                pipeline.set_state(Gst.State.PAUSED)
+                pipeline.get_state(Gst.CLOCK_TIME_NONE)
 
             # DEBUG: Log before seek
             logger.info("DEBUG [Chunk %d]: Attempting seek to %.2fs", chunk.chunkIdx, start_pts / 1e9)
